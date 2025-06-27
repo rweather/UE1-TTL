@@ -3195,20 +3195,10 @@
 		(uuid "deb48d68-2569-47f0-8e73-cea49872ee8a")
 	)
 	(junction
-		(at 48.26 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e55d746b-b5e8-43dc-901f-b95b235cafb7")
-	)
-	(junction
 		(at 132.08 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed46f537-68f5-4f00-a7c3-a56a1d180419")
-	)
-	(no_connect
-		(at 66.04 93.98)
-		(uuid "551d7187-5d8c-4a43-a4e1-37753d80e473")
 	)
 	(wire
 		(pts
@@ -3652,16 +3642,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 100.33) (xy 48.26 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "679c258b-d15c-4de8-9000-b4bbfb2eeceb")
-	)
-	(wire
-		(pts
 			(xy 182.88 83.82) (xy 182.88 76.2)
 		)
 		(stroke
@@ -3789,16 +3769,6 @@
 			(type default)
 		)
 		(uuid "907abdb0-e040-44e7-ba51-6f5132083028")
-	)
-	(wire
-		(pts
-			(xy 48.26 91.44) (xy 50.8 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "912d67e7-176f-45be-99ac-cf1a4e75b2d7")
 	)
 	(wire
 		(pts
@@ -4032,16 +4002,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 96.52) (xy 50.8 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c76f900f-a796-4b55-81e9-d1908fabd536")
-	)
-	(wire
-		(pts
 			(xy 173.99 63.5) (xy 185.42 63.5)
 		)
 		(stroke
@@ -4169,16 +4129,6 @@
 			(type default)
 		)
 		(uuid "e3158bae-2516-41c5-a454-09aa59e5fc3d")
-	)
-	(wire
-		(pts
-			(xy 48.26 96.52) (xy 48.26 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5390c96-bc2e-438a-a3cd-9ec7ea710a34")
 	)
 	(wire
 		(pts
@@ -5254,109 +5204,6 @@
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94"
 					(reference "#PWR31")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
-		(at 58.42 93.98 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "030bd279-8d00-482a-b586-ac7234768bb5")
-		(property "Reference" "U2"
-			(at 58.42 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS08"
-			(at 58.42 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 58.42 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 58.42 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 58.42 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "948670b5-0e06-435d-b147-4556c0f51d55")
-		)
-		(pin "8"
-			(uuid "d1e65bb9-395f-4ecf-8972-5428db20d80f")
-		)
-		(pin "5"
-			(uuid "d60b3480-855c-4aeb-ab1f-d99c59044e56")
-		)
-		(pin "9"
-			(uuid "7cff9b9f-92c8-45c4-9b97-0c64555c9027")
-		)
-		(pin "10"
-			(uuid "24df417e-aaee-4122-8661-fb4f935abc8a")
-		)
-		(pin "1"
-			(uuid "2bb63ce3-4e71-4682-b608-4c92fb1864fd")
-		)
-		(pin "3"
-			(uuid "bc8c5d73-0f4d-4131-8231-d2819bcf1ec6")
-		)
-		(pin "14"
-			(uuid "29111b80-4f67-46c9-ab60-831d5d7a15a1")
-		)
-		(pin "2"
-			(uuid "d4b2f95c-d690-4300-9515-3d5ece0b96ac")
-		)
-		(pin "6"
-			(uuid "410f2236-61b8-4369-9811-8b077ffb1bd8")
-		)
-		(pin "11"
-			(uuid "f86b51f3-0d2f-4157-b2c5-1ee042ef85a7")
-		)
-		(pin "4"
-			(uuid "acf8dd82-76d9-4e0b-8639-623d334d0cc0")
-		)
-		(pin "12"
-			(uuid "84c93d1b-7bc8-45aa-95c7-aaab8acf004a")
-		)
-		(pin "13"
-			(uuid "5aa0f996-6dcb-4842-aa8e-abc178282489")
-		)
-		(instances
-			(project "UE14500-TTL"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94"
-					(reference "U2")
-					(unit 2)
 				)
 			)
 		)
@@ -9161,72 +9008,6 @@
 			(project "UE1-TTL-Tubeless"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94"
 					(reference "#PWR36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48.26 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd4cea95-2095-4cb9-a7ac-66d5957b7941")
-		(property "Reference" "#PWR24"
-			(at 48.26 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4dc808e4-d35d-4d20-8254-56a95ed588f0")
-		)
-		(instances
-			(project "UE14500-TTL"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94"
-					(reference "#PWR24")
 					(unit 1)
 				)
 			)

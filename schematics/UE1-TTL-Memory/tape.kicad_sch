@@ -692,6 +692,151 @@
 				)
 			)
 		)
+		(symbol "Diode:1N5819"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5819"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5819_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5819_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Memory_EEPROM:28C256"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1919,6 +2064,12 @@
 		(uuid "6f711837-ce4c-4744-b933-1f284a0eca3a")
 	)
 	(junction
+		(at 149.86 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9be4e701-839a-4dbe-8b3b-ea3a31cf6aba")
+	)
+	(junction
 		(at 228.6 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1950,6 +2101,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 148.59) (xy 156.21 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04baa07a-f83c-4da9-bfbf-f9004923625c")
+	)
+	(wire
+		(pts
 			(xy 238.76 85.09) (xy 256.54 85.09)
 		)
 		(stroke
@@ -1977,6 +2138,16 @@
 			(type default)
 		)
 		(uuid "0e094743-6b31-4a1e-beaf-0474ceb0f527")
+	)
+	(wire
+		(pts
+			(xy 149.86 153.67) (xy 143.51 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "155d1d3e-3d2f-410d-b547-45bb9c1b08ee")
 	)
 	(wire
 		(pts
@@ -2200,6 +2371,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 143.51) (xy 135.89 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40448d4b-af75-40d7-aee9-212204c044d1")
+	)
+	(wire
+		(pts
+			(xy 149.86 148.59) (xy 149.86 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "464d780d-bcfe-4f11-91fd-e68e1c7875e8")
+	)
+	(wire
+		(pts
 			(xy 162.56 76.2) (xy 172.72 76.2)
 		)
 		(stroke
@@ -2367,6 +2558,16 @@
 			(type default)
 		)
 		(uuid "8242ebd5-d1b9-4e11-adf5-83e5c8722fe6")
+	)
+	(wire
+		(pts
+			(xy 130.81 153.67) (xy 135.89 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85427f0f-c688-40ad-8432-2519e22bfd8e")
 	)
 	(wire
 		(pts
@@ -2570,6 +2771,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 143.51) (xy 149.86 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc859eb1-3687-458f-8841-7f54bc1929b1")
+	)
+	(wire
+		(pts
 			(xy 58.42 142.24) (xy 60.96 142.24)
 		)
 		(stroke
@@ -2730,6 +2941,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 143.51) (xy 149.86 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f426a01c-6bfb-4069-a920-10fde2639f45")
+	)
+	(wire
+		(pts
 			(xy 162.56 78.74) (xy 172.72 78.74)
 		)
 		(stroke
@@ -2788,6 +3009,17 @@
 			)
 		)
 		(uuid "4a20f6b2-7268-4b65-a57f-dff2cd1e2431")
+	)
+	(text "Diode-OR to rewind the tape at reset\nor for \"REWIND\" opcodes $00 to $08."
+		(exclude_from_sim no)
+		(at 126.746 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a137c375-9e56-4163-ad9c-e02a67db058c")
 	)
 	(global_label "CLK2"
 		(shape input)
@@ -2899,7 +3131,7 @@
 			)
 		)
 	)
-	(global_label "RESET"
+	(global_label "REWIND_TAPE"
 		(shape input)
 		(at 55.88 54.61 180)
 		(fields_autoplaced yes)
@@ -2911,7 +3143,7 @@
 		)
 		(uuid "38eebda0-a12c-469f-b38e-ac05d7260f18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.1497 54.61 0)
+			(at 40.3763 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2987,7 +3219,7 @@
 			)
 		)
 	)
-	(global_label "RESET"
+	(global_label "REWIND_TAPE"
 		(shape input)
 		(at 55.88 83.82 180)
 		(fields_autoplaced yes)
@@ -2999,7 +3231,29 @@
 		)
 		(uuid "568ec1a7-2d21-435b-8e2a-9757abf25258")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.1497 83.82 0)
+			(at 40.3763 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RESET"
+		(shape input)
+		(at 130.81 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c06761f-25ac-4c63-844a-5393880f904e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.0797 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3141,7 +3395,29 @@
 			)
 		)
 	)
-	(global_label "RESET"
+	(global_label "REWIND"
+		(shape input)
+		(at 130.81 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d06991ed-da63-41c0-8e45-f0543b6147ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.7491 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REWIND_TAPE"
 		(shape input)
 		(at 55.88 113.03 180)
 		(fields_autoplaced yes)
@@ -3153,7 +3429,7 @@
 		)
 		(uuid "de33ce67-93e0-4897-a866-881075caee8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.1497 113.03 0)
+			(at 40.3763 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,6 +3452,28 @@
 		(uuid "e2999a73-4aa7-4edb-b193-e67e56f5e939")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 178.1847 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REWIND_TAPE"
+		(shape output)
+		(at 156.21 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1d815c1-b9df-4847-b5e6-f0a74971b5d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.7137 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,6 +3960,74 @@
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/5d6a44b6-3961-416e-a2d7-c77884968f39"
 					(reference "#PWR64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819")
+		(at 139.7 143.51 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "364f1d94-b783-40ff-a836-9939a207d337")
+		(property "Reference" "D9"
+			(at 140.0175 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 140.0175 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 139.7 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "97acd29b-dfa5-461f-958e-21b02c500e5f")
+		)
+		(pin "1"
+			(uuid "b1ab5fd9-6da5-4364-8195-5c073d1c5e07")
+		)
+		(instances
+			(project ""
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/5d6a44b6-3961-416e-a2d7-c77884968f39"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4272,6 +4638,74 @@
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/5d6a44b6-3961-416e-a2d7-c77884968f39"
 					(reference "#PWR55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819")
+		(at 139.7 153.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "780cd81b-6676-4d06-abde-d5ea6d8ca855")
+		(property "Reference" "D10"
+			(at 140.0175 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 140.0175 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 139.7 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 139.7 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 139.7 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2375e5ff-f065-49df-b2a4-dfbc090f8a39")
+		)
+		(pin "1"
+			(uuid "5cea2c13-7c61-46e8-a503-6054d54697ee")
+		)
+		(instances
+			(project "UE1-TTL-Memory"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/5d6a44b6-3961-416e-a2d7-c77884968f39"
+					(reference "D10")
 					(unit 1)
 				)
 			)

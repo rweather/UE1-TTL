@@ -2251,7 +2251,7 @@
 			)
 		)
 	)
-	(global_label "THRU1"
+	(global_label "SPARE"
 		(shape input)
 		(at 181.61 142.24 0)
 		(fields_autoplaced yes)
@@ -2263,7 +2263,7 @@
 		)
 		(uuid "0d224341-d66b-488e-baf6-72703704795a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 190.7033 142.24 0)
+			(at 190.5823 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2339,7 +2339,7 @@
 			)
 		)
 	)
-	(global_label "THRU0"
+	(global_label "OP_REWIND"
 		(shape input)
 		(at 181.61 139.7 0)
 		(fields_autoplaced yes)
@@ -2351,7 +2351,7 @@
 		)
 		(uuid "1c3cbdd8-a5db-4e7e-a9af-59100f14dc45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 190.7033 139.7 0)
+			(at 195.239 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2889,8 +2889,8 @@
 			)
 		)
 	)
-	(global_label "THRU0"
-		(shape output)
+	(global_label "OP_REWIND"
+		(shape input)
 		(at 109.22 139.7 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2901,7 +2901,7 @@
 		)
 		(uuid "7da966e2-6b13-4dc5-ad8f-09ae933d9b45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.3133 139.7 0)
+			(at 122.849 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3087,7 +3087,7 @@
 			)
 		)
 	)
-	(global_label "THRU1"
+	(global_label "SPARE"
 		(shape output)
 		(at 109.22 142.24 0)
 		(fields_autoplaced yes)
@@ -3099,7 +3099,7 @@
 		)
 		(uuid "9d651067-5445-4771-b72e-4e608b0be98b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.3133 142.24 0)
+			(at 118.1923 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
