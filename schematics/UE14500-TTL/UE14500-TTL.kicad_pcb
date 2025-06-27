@@ -83,7 +83,7 @@
 	(net 1 "GND")
 	(net 2 "+5V")
 	(net 3 "~{RESET}")
-	(net 4 "OP_REWIND")
+	(net 4 "REWIND")
 	(net 5 "CLK2")
 	(net 6 "OEN")
 	(net 7 "~{OP_NOPF}")
@@ -5558,7 +5558,7 @@
 				"In29.Cu" "In30.Cu"
 			)
 			(remove_unused_layers no)
-			(net 4 "OP_REWIND")
+			(net 4 "REWIND")
 			(pinfunction "Pin_30")
 			(pintype "passive")
 			(uuid "2abbe377-0921-4e7a-b8ad-b335089db9ac")
@@ -6118,7 +6118,7 @@
 		(at 151.384 143.51 180)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 7.112 0 180)
 			(layer "F.SilkS")
 			(uuid "3184eceb-9c0a-470e-9409-a64391844aba")
@@ -6130,7 +6130,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 2.5 2.5 360)
+			(at 2.5 2.5 0)
 			(layer "F.Fab")
 			(uuid "d6283851-e2eb-4de1-a712-4a33a2835995")
 			(effects
@@ -6325,7 +6325,7 @@
 			(uuid "0d0a3228-b698-4589-a440-3cc945b23a21")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 360)
+			(at 2.5 0 0)
 			(layer "F.Fab")
 			(uuid "6d0e3890-7f87-4ef5-85ec-cf6a2cffde11")
 			(effects
@@ -7318,7 +7318,7 @@
 		(at 116.46 137.12 90)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 4.024 -3.684 180)
 			(layer "F.SilkS")
 			(uuid "4c55cad3-fc1b-4942-91ce-9b58a33af7ec")
@@ -9847,7 +9847,7 @@
 				"In29.Cu" "In30.Cu"
 			)
 			(remove_unused_layers no)
-			(net 4 "OP_REWIND")
+			(net 4 "REWIND")
 			(pintype "output")
 			(uuid "f86ab889-597a-4107-bfce-fc215e4797bd")
 		)
@@ -10820,7 +10820,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/4abc98b8-59b0-47a5-b354-2023193d4bfb/d0378aae-2ec6-43b8-95c8-404c52a7320a")
+		(path "/4abc98b8-59b0-47a5-b354-2023193d4bfb/e07feea9-abd5-470d-adcc-566981d1fee5")
 		(sheetname "ALU")
 		(sheetfile "ALU.kicad_sch")
 		(attr through_hole)
@@ -12543,7 +12543,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94/ad37cb94-0b80-409c-a362-4a3c7935d28d")
+		(path "/ae25e494-ab45-4d0a-a9ba-a92e3da9ec94/3ffa0c41-2c87-4d60-8798-bff0c5bdc0c0")
 		(sheetname "Instruction Register and Decoder")
 		(sheetfile "instruction_register.kicad_sch")
 		(attr through_hole)
@@ -22180,7 +22180,7 @@
 				"In29.Cu" "In30.Cu"
 			)
 			(remove_unused_layers no)
-			(net 4 "OP_REWIND")
+			(net 4 "REWIND")
 			(pinfunction "Pin_30")
 			(pintype "passive")
 			(uuid "36c843fe-9647-4ad9-a2fa-663a9833cfbc")

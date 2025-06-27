@@ -2339,7 +2339,7 @@
 			)
 		)
 	)
-	(global_label "OP_REWIND"
+	(global_label "REWIND"
 		(shape input)
 		(at 181.61 139.7 0)
 		(fields_autoplaced yes)
@@ -2351,7 +2351,7 @@
 		)
 		(uuid "1c3cbdd8-a5db-4e7e-a9af-59100f14dc45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.239 139.7 0)
+			(at 191.6709 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2889,7 +2889,7 @@
 			)
 		)
 	)
-	(global_label "OP_REWIND"
+	(global_label "REWIND"
 		(shape input)
 		(at 109.22 139.7 0)
 		(fields_autoplaced yes)
@@ -2901,7 +2901,7 @@
 		)
 		(uuid "7da966e2-6b13-4dc5-ad8f-09ae933d9b45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.849 139.7 0)
+			(at 119.2809 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)

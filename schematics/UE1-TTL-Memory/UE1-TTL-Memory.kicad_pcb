@@ -9045,7 +9045,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/5d6a44b6-3961-416e-a2d7-c77884968f39/929ab16f-ecc3-414a-93b2-ee44fed40d67")
+		(path "/5d6a44b6-3961-416e-a2d7-c77884968f39/e8d6d21b-d0cd-4b79-8bd8-6de7343474de")
 		(sheetname "Tape")
 		(sheetfile "tape.kicad_sch")
 		(attr through_hole)
