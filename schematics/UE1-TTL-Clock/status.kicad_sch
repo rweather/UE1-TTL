@@ -5,7 +5,7 @@
 	(uuid "78fcfa89-a1bb-4261-87c4-7735ade4323a")
 	(paper "A4")
 	(title_block
-		(title "UE1- TTL Clock and Diagnostics")
+		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
 		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
@@ -1366,6 +1366,17 @@
 			(type default)
 		)
 		(uuid "febeaf4b-6dda-41c1-829f-a8bbcf0d5a4b")
+	)
+	(text "Choose RLED values to match the properties of the LED's you are using.\n\n        RLED = (5 - VLED) / ILED\n\nExamples:\n\n        VLED = 1.7V, ILED = 15mA, RLED = 220R\n        VLED = 1.9V, ILED =  2mA, RLED = 1550R (1K8 should be fine)\n        VLED = 1.9V, ILED = 10mA, RLED = 310R (330R should be fine)\n\nRecommend 2mA LED's to reduce current draw on TTL outputs"
+		(exclude_from_sim no)
+		(at 41.656 174.498 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "103ccc4f-8de1-4372-b7ef-dac617840b07")
 	)
 	(text "Registers"
 		(exclude_from_sim no)

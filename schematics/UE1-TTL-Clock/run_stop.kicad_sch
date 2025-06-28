@@ -5,7 +5,7 @@
 	(uuid "878142e1-d566-452f-b727-79387130881e")
 	(paper "A4")
 	(title_block
-		(title "UE1- TTL Clock and Diagnostics")
+		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
 		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
@@ -4087,6 +4087,16 @@
 			)
 		)
 		(uuid "4ab3d845-d017-4d89-987f-5c9c17abf1b2")
+	)
+	(text "LED's are reversed because the\nsignals are active-low."
+		(exclude_from_sim no)
+		(at 215.138 116.332 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a93b1b88-b8d0-4ac8-be5e-93db24dda23c")
 	)
 	(text "Interlock ~{RUN} and\n~{STOP} so that both\ncannot be low at the\nsame time. ~{STOP} wins."
 		(exclude_from_sim no)

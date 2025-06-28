@@ -5,7 +5,7 @@
 	(uuid "03471d35-afd1-4a18-b783-c37ebc82a3f7")
 	(paper "A4")
 	(title_block
-		(title "UE1- TTL Clock and Diagnostics")
+		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
 		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")

@@ -5,13 +5,115 @@
 	(uuid "3387ba40-0694-43b2-a156-d12ce9552f1f")
 	(paper "A4")
 	(title_block
-		(title "UE1- TTL Clock and Diagnostics")
+		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
 		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
 		(comment 3 "Edge Connectors")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x36"
 			(pin_names
 				(offset 1.016) hide)
@@ -1436,14 +1538,6 @@
 			)
 		)
 	)
-	(no_connect
-		(at 176.53 142.24)
-		(uuid "8d17d007-d9f2-43c6-89cb-f10070b33218")
-	)
-	(no_connect
-		(at 176.53 139.7)
-		(uuid "8ec65497-da54-493d-bdce-ee042073f849")
-	)
 	(wire
 		(pts
 			(xy 104.14 81.28) (xy 109.22 81.28)
@@ -1513,6 +1607,16 @@
 			(type default)
 		)
 		(uuid "2006e2bd-f42a-4710-a081-fd08151f8d2d")
+	)
+	(wire
+		(pts
+			(xy 176.53 142.24) (xy 194.31 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2152778d-7154-4cc3-89fd-48363db40b36")
 	)
 	(wire
 		(pts
@@ -1653,6 +1757,16 @@
 			(type default)
 		)
 		(uuid "3c4ea1dc-8fc4-44bb-8739-9cf54913fe98")
+	)
+	(wire
+		(pts
+			(xy 194.31 142.24) (xy 194.31 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea1c49b-00d4-433f-ad20-3c527cdda2d4")
 	)
 	(wire
 		(pts
@@ -1833,6 +1947,16 @@
 			(type default)
 		)
 		(uuid "7136475a-d637-4928-9b44-2418bfa36a6f")
+	)
+	(wire
+		(pts
+			(xy 194.31 144.78) (xy 198.12 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72938fc2-2e05-4f44-9bfa-bdd715112117")
 	)
 	(wire
 		(pts
@@ -2033,6 +2157,16 @@
 			(type default)
 		)
 		(uuid "d1b0f1f9-748f-409d-8559-dfc002654eb2")
+	)
+	(wire
+		(pts
+			(xy 176.53 139.7) (xy 198.12 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29213e2-4f97-42d0-a277-2779b5364a02")
 	)
 	(wire
 		(pts
@@ -4353,6 +4487,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.12 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88e143e4-50c3-4c11-a551-3879d6e45376")
+		(property "Reference" "TP1"
+			(at 203.2 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "REWIND"
+			(at 203.2 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 198.12 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e033339-9912-4e4b-a8c1-f7250c3162c9")
+		)
+		(instances
+			(project ""
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 45.72 173.99 0)
 		(unit 1)
@@ -4542,6 +4743,73 @@
 			(project "UE14500-TTL"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f"
 					(reference "#PWR6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.12 144.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca997af6-eb4e-4ffa-992f-e6d8f10d8dcd")
+		(property "Reference" "TP2"
+			(at 203.2 143.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SPARE"
+			(at 203.2 146.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 198.12 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.12 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbd98dd4-6afb-449d-a4b0-9a5dd4e12285")
+		)
+		(instances
+			(project "UE1-TTL-Clock"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
