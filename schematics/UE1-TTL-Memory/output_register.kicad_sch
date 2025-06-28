@@ -1592,16 +1592,16 @@
 		)
 		(uuid "fca41c8f-912a-4a03-aaaa-1900384232f0")
 	)
-	(text "470R for 5mA rated LED's, 220R for 15mA rated LED's"
+	(text "Choose RLED values to match the properties of the LED's you are using.\n\n        RLED = (5 - VLED) / ILED\n\nExamples:\n\n        VLED = 1.7V, ILED = 15mA, RLED = 220R\n        VLED = 1.9V, ILED =  2mA, RLED = 1550R (1K8 should be fine)\n        VLED = 1.9V, ILED = 10mA, RLED = 310R (330R should be fine)\n\nRecommend 2mA LED's to reduce current draw on TTL outputs"
 		(exclude_from_sim no)
-		(at 123.952 125.984 0)
+		(at 46.228 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "0f4e6da5-a954-4dde-a4a8-fc29e476ac20")
+		(uuid "dd3265d9-1c23-4d2a-821e-5262c6a638fd")
 	)
 	(global_label "OR2"
 		(shape output)
@@ -1991,7 +1991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18f6b558-9b6c-4140-a6ee-1ec101b0ba2e")
-		(property "Reference" "#PWR44"
+		(property "Reference" "#PWR34"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -2041,7 +2041,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR44")
+					(reference "#PWR34")
 					(unit 1)
 				)
 			)
@@ -2127,7 +2127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22160f4f-bb0f-4802-a7a0-924b856d3381")
-		(property "Reference" "#PWR41"
+		(property "Reference" "#PWR31"
 			(at 87.63 107.95 0)
 			(effects
 				(font
@@ -2177,7 +2177,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR41")
+					(reference "#PWR31")
 					(unit 1)
 				)
 			)
@@ -2333,7 +2333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25db5ea8-88da-4cfd-9a50-1f51605aa421")
-		(property "Reference" "#PWR47"
+		(property "Reference" "#PWR37"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -2383,7 +2383,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR47")
+					(reference "#PWR37")
 					(unit 1)
 				)
 			)
@@ -2399,7 +2399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c2d6cb0-99bf-4e8f-8596-443e1e1e9eb9")
-		(property "Reference" "#PWR42"
+		(property "Reference" "#PWR32"
 			(at 87.63 125.73 0)
 			(effects
 				(font
@@ -2449,7 +2449,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR42")
+					(reference "#PWR32")
 					(unit 1)
 				)
 			)
@@ -2535,7 +2535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fb14b7b-90c6-45c5-b3b8-25f55d95a9f1")
-		(property "Reference" "#PWR51"
+		(property "Reference" "#PWR41"
 			(at 190.5 121.92 0)
 			(effects
 				(font
@@ -2585,7 +2585,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR51")
+					(reference "#PWR41")
 					(unit 1)
 				)
 			)
@@ -2811,7 +2811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b480c51-e8f5-4de5-a2a4-d870fbbbad0e")
-		(property "Reference" "#PWR40"
+		(property "Reference" "#PWR30"
 			(at 87.63 69.85 0)
 			(effects
 				(font
@@ -2861,7 +2861,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR40")
+					(reference "#PWR30")
 					(unit 1)
 				)
 			)
@@ -3017,7 +3017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82ef6244-bd50-4d42-a716-2c328df219f5")
-		(property "Reference" "#PWR48"
+		(property "Reference" "#PWR38"
 			(at 156.21 121.92 0)
 			(effects
 				(font
@@ -3067,7 +3067,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR48")
+					(reference "#PWR38")
 					(unit 1)
 				)
 			)
@@ -3153,7 +3153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab68a210-015a-43e8-88fa-b451b4ebf8ba")
-		(property "Reference" "#PWR49"
+		(property "Reference" "#PWR39"
 			(at 167.64 121.92 0)
 			(effects
 				(font
@@ -3203,7 +3203,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR49")
+					(reference "#PWR39")
 					(unit 1)
 				)
 			)
@@ -3219,7 +3219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c17cca52-46eb-444a-9437-2e621e8e1a15")
-		(property "Reference" "#PWR43"
+		(property "Reference" "#PWR33"
 			(at 87.63 135.89 0)
 			(effects
 				(font
@@ -3269,7 +3269,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR43")
+					(reference "#PWR33")
 					(unit 1)
 				)
 			)
@@ -3425,7 +3425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d38bba1f-d112-4d1e-9c91-3c13b061d387")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 91.44 124.4599 0)
 			(effects
 				(font
@@ -3479,7 +3479,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3635,7 +3635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3b0ed09-4bce-43cd-adc3-15787e7f05a4")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 89.8241 66.04 0)
 			(effects
 				(font
@@ -3731,7 +3731,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -3747,7 +3747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4324e8a-c028-420e-8668-5b65b49e383c")
-		(property "Reference" "#PWR50"
+		(property "Reference" "#PWR40"
 			(at 179.07 121.92 0)
 			(effects
 				(font
@@ -3797,7 +3797,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR50")
+					(reference "#PWR40")
 					(unit 1)
 				)
 			)
@@ -3813,7 +3813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebccfaa3-65be-4db8-9393-832d0b176a2f")
-		(property "Reference" "#PWR46"
+		(property "Reference" "#PWR36"
 			(at 133.35 121.92 0)
 			(effects
 				(font
@@ -3863,7 +3863,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR46")
+					(reference "#PWR36")
 					(unit 1)
 				)
 			)
@@ -3949,7 +3949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff834da9-98a8-4d4a-af12-6f030e53b74e")
-		(property "Reference" "#PWR45"
+		(property "Reference" "#PWR35"
 			(at 121.92 121.92 0)
 			(effects
 				(font
@@ -3999,7 +3999,7 @@
 		(instances
 			(project "UE1-Memory"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4783696b-edb1-49fa-83d3-8dbb9585c153"
-					(reference "#PWR45")
+					(reference "#PWR35")
 					(unit 1)
 				)
 			)
