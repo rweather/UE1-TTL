@@ -2916,7 +2916,7 @@
 				)
 			)
 		)
-		(symbol "74xx:74LS151"
+		(symbol "74xx:74LS251"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2931,7 +2931,7 @@
 					)
 				)
 			)
-			(property "Value" "74LS151"
+			(property "Value" "74LS251"
 				(at -7.62 -21.59 0)
 				(effects
 					(font
@@ -2948,7 +2948,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS151"
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS251"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2957,7 +2957,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Multiplexer 8 to 1"
+			(property "Description" "Multiplexer 8 to 1, 3-state Outputs"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2974,7 +2974,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "TTL MUX8"
+			(property "ki_keywords" "TTL MUX MUX8 3State"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2992,7 +2992,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "74LS151_1_0"
+			(symbol "74LS251_1_0"
 				(pin input line
 					(at -12.7 7.62 0)
 					(length 5.08)
@@ -3191,10 +3191,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin tri_state line
 					(at 12.7 15.24 180)
 					(length 5.08)
-					(name "Z"
+					(name "Y"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3209,10 +3209,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin tri_state line
 					(at 12.7 12.7 180)
 					(length 5.08)
-					(name "~{Z}"
+					(name "~{Y}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3230,7 +3230,7 @@
 				(pin input line
 					(at -12.7 -17.78 0)
 					(length 5.08)
-					(name "~{E}"
+					(name "~{OE}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3282,7 +3282,7 @@
 					)
 				)
 			)
-			(symbol "74LS151_1_1"
+			(symbol "74LS251_1_1"
 				(rectangle
 					(start -7.62 17.78)
 					(end 7.62 -20.32)
@@ -6267,7 +6267,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS151")
+		(lib_id "74xx:74LS251")
 		(at 149.86 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6285,7 +6285,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS151"
+		(property "Value" "74LS251"
 			(at 152.0541 114.3 0)
 			(effects
 				(font
@@ -6303,7 +6303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS151"
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS251"
 			(at 149.86 134.62 0)
 			(effects
 				(font
@@ -6312,7 +6312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Multiplexer 8 to 1"
+		(property "Description" "Multiplexer 8 to 1, 3-state Outputs"
 			(at 149.86 134.62 0)
 			(effects
 				(font
