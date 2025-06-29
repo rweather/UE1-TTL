@@ -99,7 +99,8 @@ parts list for the whole computer.
 * 1 x 74LS251 8-line to 1-line multiplexer
 * 1 x 74LS374 8-bit register
 * 1 x 100uF electrolytic capacitor
-* 17 x 100nF ceramic or monolithic capacitor
+* 1 x 1uF ceramic or monolithic capacitor
+* 16 x 100nF ceramic or monolithic capacitor
 * 1 x 10K resistor
 * 1 x SPDT 2.54mm slide switch
 * 1 x 2.5mm DC barrel jack
@@ -190,9 +191,9 @@ chips can be used in place of 74LS.
 * 1 x 74LS374 8-bit register
 * 2 x 74LS393 dual binary 4-bit counter
 * 1 x 100uF electrolytic capacitor
-* 4 x 1uF ceramic or monolithic capacitor
+* 5 x 1uF ceramic or monolithic capacitor
 * 2 x 10nF ceramic or monolithic capacitor
-* 30 x 100nF ceramic or monolithic capacitor
+* 29 x 100nF ceramic or monolithic capacitor
 * 1 x 1M trimpot
 * 2 x 1K resistor
 * 1 x 3K3 resistor
