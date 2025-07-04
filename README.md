@@ -46,6 +46,7 @@ The computer is split across three PCB's, because:
 
 * [Schematics](schematics/UE1-TTL-Clock/PDF/UE1-TTL-Clock.pdf)
 * [Gerbers](schematics/UE1-TTL-Clock/Gerber)
+* [Assembling and testing](doc/testing_clock.md)
 
 ### Memory and I/O board
 
@@ -117,7 +118,7 @@ parts list for the whole computer.
 * 1 x 10K resistor
 * 1 x SPDT 2.54mm slide switch
 * 1 x 2.5mm DC barrel jack
-* 2 x 36-pin terminal socket
+* 2 x 36-pin right-angle terminal socket
 * 12 x 14-pin DIP socket
 * 3 x 16-pin DIP socket
 * 1 x 20-pin DIP socket
@@ -145,7 +146,7 @@ parts list for the whole computer.
 * 1 x 3-way 2.54mm pin header
 * 1 x 2-way 2.54mm pin header
 * 2 x 2.54mm jumper
-* 2 x 36-pin terminal header
+* 2 x 36-pin right-angle terminal header
 * 2 x 8-pin DIP socket
 * 4 x 14-pin DIP socket
 
@@ -164,7 +165,7 @@ parts list for the whole computer.
 * 8 x 3mm LED (colour of your choice)
 * 1 x 8-way DIP switches
 * 1 x 3-way DIP switches
-* 2 x 36-pin terminal header
+* 2 x 36-pin right-angle terminal header
 * 3 x 14-pin DIP socket
 * 5 x 16-pin DIP socket
 * 1 x 28-pin DIP socket (15.24mm pitch width)
