@@ -1,18 +1,18 @@
-UE-1 Computer in TTL
-====================
+UE1 Computer in TTL
+===================
 
 ## What is this?
 
-This is an implementation of the [Usagi Electric UE-1 vacuum tube computer architecture](https://github.com/Nakazoto/UEVTC/wiki)
+This is an implementation of the [Usagi Electric UE1 vacuum tube computer architecture](https://github.com/Nakazoto/UEVTC/wiki)
 in TTL logic.  It runs the same code as the original.
 
 <a href="images/kicad-3d-full-computer.png"><img alt="UE1 TTL 3D Rendering" src="images/kicad-3d-full-computer.png" width="860"/></a>
 
 ## Specifications
 
-* TTL logic and EEPROM chips only, no cheating with a modern microcontroller
-  running an emulator.
-* 1-bit processor core based on the UE14500.
+* TTL logic, 555 timers, and EEPROM chips only.  No cheating with a modern
+  microcontroller running an emulator.
+* 1-bit processor core based on the UE14500 instruction set.
 * 8-bit scratch register (general-purpose RAM).
 * 8-bit output register.
 * 7-bit input register.
@@ -20,7 +20,7 @@ in TTL logic.  It runs the same code as the original.
   DIP switches select which program to run.
 * 555-based clock that runs at frequencies between 0.7Hz and 480Hz.
 * Run, Halt, and Reset buttons to control the computer.
-* Blinken lights!
+* Blinkenlichten!
 * Bell buzzer.
 * Runs off a single 5V DC supply.
 
@@ -28,16 +28,29 @@ The computer is split across three PCB's, because:
 
 * PCB's less than 100mm x 100mm in size are cheaper to get made.
 * The aspect ratio of the boards is close to those of the wooden backing
-  boards in the original UE-1 to provide a similar visual aesthetic
+  boards in the original UE1 to provide a similar visual aesthetic
   (although I need 3 boards compared with the original 2).
 * It is easier to upgrade one of the boards without having to re-spin
   the other boards.
 
-## Schematics
+## Technical information
 
-* [Processor board](schematics/UE14500-TTL/PDF/UE14500-TTL.pdf)
-* [Clock and front panel board](schematics/UE1-TTL-Clock/PDF/UE1-TTL-Clock.pdf)
-* [Memory and I/O board](schematics/UE1-TTL-Memory/PDF/UE1-TTL-Memory.pdf)
+* [Theory of operation](doc/theory_of_operation.md)
+
+### Processor board
+
+* [Schematics](schematics/UE14500-TTL/PDF/UE14500-TTL.pdf)
+* [Gerbers](schematics/UE14500-TTL/Gerber)
+
+### Clock and front panel board
+
+* [Schematics](schematics/UE1-TTL-Clock/PDF/UE1-TTL-Clock.pdf)
+* [Gerbers](schematics/UE1-TTL-Clock/Gerber)
+
+### Memory and I/O board
+
+* [Schematics](schematics/UE1-TTL-Memory/PDF/UE1-TTL-Memory.pdf)
+* [Gerbers](schematics/UE1-TTL-Memory/Gerber)
 
 ## Programming the computer
 
@@ -49,7 +62,7 @@ There can be up to 8 programs in the EEPROM, with DIP switches to select
 which program to run.  Each program is up to 4096 instructions long,
 which corresponds to about 10m of paper tape.  Each instruction consists
 of a 4-bit opcode and a 4-bit memory address just like in the vacuum tube
-based UE-1.
+based UE1.
 
 Pad shorter programs with NOP0 instructions or replicate the program
 multiple times to fill up the 4096 bytes of space.  There is a new
@@ -104,10 +117,7 @@ parts list for the whole computer.
 * 1 x 10K resistor
 * 1 x SPDT 2.54mm slide switch
 * 1 x 2.5mm DC barrel jack
-* 2 x 36-pin terminal header or socket (or one of each)
-
-If you wish to use IC sockets, then you will also need:
-
+* 2 x 36-pin terminal socket
 * 12 x 14-pin DIP socket
 * 3 x 16-pin DIP socket
 * 1 x 20-pin DIP socket
@@ -135,10 +145,7 @@ If you wish to use IC sockets, then you will also need:
 * 1 x 3-way 2.54mm pin header
 * 1 x 2-way 2.54mm pin header
 * 2 x 2.54mm jumper
-* 2 x 36-pin terminal header or socket (or one of each)
-
-If you wish to use IC sockets, then you will also need:
-
+* 2 x 36-pin terminal header
 * 2 x 8-pin DIP socket
 * 4 x 14-pin DIP socket
 
@@ -157,10 +164,7 @@ If you wish to use IC sockets, then you will also need:
 * 8 x 3mm LED (colour of your choice)
 * 1 x 8-way DIP switches
 * 1 x 3-way DIP switches
-* 2 x 36-pin terminal header or socket (or one of each)
-
-If you wish to use IC sockets, then you will also need:
-
+* 2 x 36-pin terminal header
 * 3 x 14-pin DIP socket
 * 5 x 16-pin DIP socket
 * 1 x 28-pin DIP socket (15.24mm pitch width)
@@ -213,21 +217,19 @@ chips can be used in place of 74LS.
 * 1 x 3-way DIP switches
 * 4 x 36-pin terminal header (for clock and memory boards)
 * 2 x 36-pin terminal socket (for CPU board)
-
-If you wish to use IC sockets, then you will also need:
-
 * 2 x 8-pin DIP socket
 * 19 x 14-pin DIP socket
 * 8 x 16-pin DIP socket
 * 1 x 20-pin DIP socket
 * 1 x 28-pin DIP socket (15.24mm pitch width)
 
-The 28-pin DIP socket is recommended even if you don't use sockets for
-everything else.
+I recommend using a socket for the 28-pin EEPROM even if you don't use
+sockets for the other chips.  You will need to easily remove the EEPROM to
+reprogram it.
 
 ## License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">UE-1 TTL</span> by <span property="cc:attributionName">Rhys Weatherley</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">UE1 TTL</span> by <span property="cc:attributionName">Rhys Weatherley</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 ## Contact
 
