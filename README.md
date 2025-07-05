@@ -36,6 +36,7 @@ The computer is split across three PCB's, because:
 ## Technical information
 
 * [Theory of operation](doc/theory_of_operation.md)
+* [Signals on the edge connectors](doc/edge_connectors.md)
 
 ### Clock and front panel board
 
