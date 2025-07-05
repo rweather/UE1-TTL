@@ -37,16 +37,17 @@ The computer is split across three PCB's, because:
 
 * [Theory of operation](doc/theory_of_operation.md)
 
-### Processor board
-
-* [Schematics](schematics/UE14500-TTL/PDF/UE14500-TTL.pdf)
-* [Gerbers](schematics/UE14500-TTL/Gerber)
-
 ### Clock and front panel board
 
 * [Schematics](schematics/UE1-TTL-Clock/PDF/UE1-TTL-Clock.pdf)
 * [Gerbers](schematics/UE1-TTL-Clock/Gerber)
 * [Assembling and testing](doc/testing_clock.md)
+
+### Processor board
+
+* [Schematics](schematics/UE14500-TTL/PDF/UE14500-TTL.pdf)
+* [Gerbers](schematics/UE14500-TTL/Gerber)
+* [Assembling and testing](doc/testing_processor.md)
 
 ### Memory and I/O board
 
@@ -102,27 +103,6 @@ Use the same series for all chips.
 Parts lists for individual boards are listed first, and then a combined
 parts list for the whole computer.
 
-### Processor board
-
-* 3 x 74LS00 quad NAND gate
-* 3 x 74LS02 quad NOR gate
-* 2 x 74LS08 quad AND gate
-* 3 x 74LS74 dual D flip-flop
-* 1 x 74LS86 quad XOR gate
-* 2 x 74LS138 3-to-8 line decoder
-* 1 x 74LS251 8-line to 1-line multiplexer
-* 1 x 74LS374 8-bit register
-* 1 x 100uF electrolytic capacitor
-* 1 x 1uF ceramic or monolithic capacitor
-* 16 x 100nF ceramic or monolithic capacitor
-* 1 x 10K resistor
-* 1 x SPDT 2.54mm slide switch
-* 1 x 2.5mm DC barrel jack
-* 2 x 36-pin right-angle terminal socket
-* 12 x 14-pin DIP socket
-* 3 x 16-pin DIP socket
-* 1 x 20-pin DIP socket
-
 ### Clock and front panel board
 
 * 2 x 555 timer
@@ -149,6 +129,27 @@ parts list for the whole computer.
 * 2 x 36-pin right-angle terminal header
 * 2 x 8-pin DIP socket
 * 4 x 14-pin DIP socket
+
+### Processor board
+
+* 3 x 74LS00 quad NAND gate
+* 3 x 74LS02 quad NOR gate
+* 2 x 74LS08 quad AND gate
+* 3 x 74LS74 dual D flip-flop
+* 1 x 74LS86 quad XOR gate
+* 2 x 74LS138 3-to-8 line decoder
+* 1 x 74LS251 8-line to 1-line multiplexer
+* 1 x 74LS374 8-bit register
+* 1 x 100uF electrolytic capacitor
+* 1 x 1uF ceramic or monolithic capacitor
+* 16 x 100nF ceramic or monolithic capacitor
+* 1 x 10K resistor
+* 1 x SPDT 2.54mm slide switch
+* 1 x 2.5mm DC barrel jack
+* 2 x 36-pin right-angle terminal socket
+* 12 x 14-pin DIP socket
+* 3 x 16-pin DIP socket
+* 1 x 20-pin DIP socket
 
 ### Memory and I/O board
 

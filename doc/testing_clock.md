@@ -30,6 +30,9 @@ Assembling and Testing the Clock Board
 * 2 x 8-pin DIP socket
 * 4 x 14-pin DIP socket
 
+The IC's are listed as 74LS series, but you can use 74HC series instead.
+Use the same series for all chips.
+
 ## Assembling
 
 Start in the usual way with the low profile components and work up in height:
