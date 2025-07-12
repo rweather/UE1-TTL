@@ -248,6 +248,25 @@ for the "rewind" instruction, as described earlier.
 
 ## Bugs
 
+### Processor board
+
+Version 1 of the processor board had a bug in the generation of the
+WRITE signal.  WRITE was originally gated off CLK1:
+
+<img alt="Write Signal Version 1" src="write_signal_1.png"/>
+
+This could cause invalid data to be written to memory when the next
+instruction was loaded on the following CLK1 rising edge.  Gate
+propagation would delay the end of the WRITE pulse into the next
+CLK1 pulse.  Moving it to CLK2 fixed the problem:
+
+<img alt="Write Signal Version 2" src="write_signal_2.png"/>
+
+The [testing page for the processor](testing_processor.md)
+describes how to bodge around this bug on the version 1 PCB.
+
+### Clock board
+
 The clock board has several issues:
 
 * I wasn't able to figure out a good design for single-stepping.

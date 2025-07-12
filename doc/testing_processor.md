@@ -60,6 +60,33 @@ between 5V and ground.  Then insert the IC's into the sockets:
 * U15 - 74LS02
 * U16 - 74LS74
 
+## Bodge Wires
+
+If you are using version 1 of the processor board, there is a bug
+with the generation of the WRITE signal.  Version 1 gates WRITE
+with the CLK1 signal:
+
+<img alt="Write Signal Version 1" src="write_signal_1.png"/>
+
+This can cause invalid data to be written to memory when the next
+instruction was loaded on the following CLK1 rising edge.  Gate
+propagation would delay the end of the WRITE pulse into the next
+CLK1 pulse.  Moving it to CLK2 fixes the problem:
+
+<img alt="Write Signal Version 2" src="write_signal_2.png"/>
+
+This is fixed in the gerbers for version 2 of the processor board.
+If you have version 1, then disconnect pin 2 of U2 from CLK1,
+cutting where X is indicated, and then run a bodge wire to connect
+pin 2 to CLK2 instead:
+
+<img alt="Fixing Write Signal 1" src="fixing_write_signal_1.png" width="500"/>
+
+Cutting the tracks will disconnect pin 9 of U8 from CLK1, so it is
+also necessary to run a wire from pin 9 of U8 to CLK1 on the edge:
+
+<img alt="Fixing Write Signal 2" src="fixing_write_signal_2.png" width="300"/>
+
 ## Testing
 
 Make sure the power switch is in the right position and then power on the

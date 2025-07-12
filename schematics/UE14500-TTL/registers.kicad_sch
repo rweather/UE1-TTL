@@ -4264,7 +4264,7 @@
 		)
 		(uuid "bee0f86b-56e5-48fe-a169-3171c7de7952")
 	)
-	(global_label "CLK1"
+	(global_label "CLK2"
 		(shape input)
 		(at 240.03 132.08 180)
 		(fields_autoplaced yes)
