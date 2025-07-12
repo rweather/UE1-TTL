@@ -85,6 +85,21 @@ Press "Run" fast enough and it isn't an issue, for now.
 
 <img alt="Run/Stop Control" src="run_stop.png" width="860"/>
 
+## Single-Stepping
+
+The clock board does not have a method to single-step instructions,
+as I could not figure out how to generate a single pair of CLK1/CLK2
+pulses and then stop.
+
+For debugging, you can hook up an external clock using a push button.
+The button needs to be pressed multiple times to execute a single
+instruction.  This is what the circuit looks like:
+
+<img alt="Single-Step" src="single_step_circuit.png" width="500"/>
+
+Shift the "Select Clock" jumper to the EXT side of the 3-pin header
+to use this setup.
+
 ## Instruction Register
 
 On the rising edge of CLK1, the next instruction is loaded into P/U4, a
@@ -185,8 +200,9 @@ value to store back to RR based on the current opcode:
 The bell circuit uses a 555 timer to generate a monostable pulse
 to drive a buzzer when the /OP\_IOC control line goes low.
 
-This circuit was a mistake.  The 555 cannot generate enough current to
-drive the buzzer.  Needs to be re-visited later.
+This circuit was partially a mistake.  I should have used a drive transistor
+on the output of the 555 to handle the 30mA or so of buzzer current.
+I managed to get away with it and the bell does work when running programs.
 
 <img alt="Bell Circuit" src="bell.png" width="860"/>
 
@@ -269,13 +285,15 @@ describes how to bodge around this bug on the version 1 PCB.
 
 The clock board has several issues:
 
-* I wasn't able to figure out a good design for single-stepping.
+* I wasn't able to figure out a good design for generating a single pair of
+  CLK1/CLK2 pulses for single-stepping, so I left it out.
 * The clock is susceptible to phantom CLK1 and CLK2 pulses when the
   machine halts or resumes.  A better design would ensure that the pulses
   are always generated in pairs.
-* The buzzer circuit is all wrong.  Driving the buzzer directly off the
-  555 timer was a mistake.  The buzzer also keeps sounding while OP\_IOC
-  is low; I meant to make it act only on a low-going edge.
+* The buzzer circuit has issues.  I should have used a drive transistor
+  instead of connecting the buzzer directly to the output of the 555.
+  The buzzer also keeps sounding while /OP\_IOC is low; I meant to make it
+  act only on a low-going edge.
 * If the Run button is held down, the program will run until halt and then
   start running again.  Run and Halt should only act on a low-going
   edge, not on a low level.
