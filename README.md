@@ -54,6 +54,7 @@ The computer is split across three PCB's, because:
 
 * [Schematics](schematics/UE1-TTL-Memory/PDF/UE1-TTL-Memory.pdf)
 * [Gerbers](schematics/UE1-TTL-Memory/Gerber)
+* [Assembling and testing](doc/testing_memory.md)
 
 ## Programming the computer
 
