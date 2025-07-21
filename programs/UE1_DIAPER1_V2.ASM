@@ -984,7 +984,7 @@ NOPF SR0
 ;
 ;       1/1 - 1 = 1/1 + ~1 = 1/1 + 0 = 1/0
 ;
-ONE  RR         ; Set CAR = 1, RR = 1.
+ONE  SR0        ; Set CAR = 1, RR = 1.
 ADD  RR
 LD   SR6
 SUB  RR         ; Subtract 1.
@@ -997,7 +997,7 @@ NOPF SR0
 ;
 ; 0/1 - 0 = 0/1 + ~0 = 0/1 + 1 = 1/0
 ;
-ONE  RR         ; Set CAR = 0, RR = 1.
+ONE  SR0        ; Set CAR = 0, RR = 1.
 SUB  SR7        ; Subtract 0.
 SKZ  RR         ; Check that RR is 0.
 NOPF SR0
@@ -1008,7 +1008,7 @@ NOPF SR0
 ;
 ; 0/1 - 1 = 0/1 + ~1 = 0/1 + 0 = 0/1
 ;
-ONE  RR         ; Set CAR = 0, RR = 1.
+ONE  SR0        ; Set CAR = 0, RR = 1.
 SUB  SR6        ; Subtract 1.
 NAND RR         ; Check that RR is 1.
 SKZ  RR
@@ -1019,7 +1019,7 @@ NOPF SR0
 ;
 ; 0/0 - 0 = 0/0 + ~0 = 0/0 + 1 = 0/1
 ;
-ONE  RR         ; Set CAR = 0, RR = 0.
+ONE  SR0        ; Set CAR = 0, RR = 0.
 NAND RR
 SUB  SR7        ; Subtract 0.
 NAND RR         ; Check that RR is 1.
@@ -1031,7 +1031,7 @@ NOPF SR0
 ;
 ; 0/0 - 1 = 0/0 + ~1 = 0/0 + 0 = 0/0
 ;
-ONE  RR         ; Set CAR = 0, RR = 0.
+ONE  SR0        ; Set CAR = 0, RR = 0.
 NAND RR
 SUB  SR6        ; Subtract 1.
 SKZ  RR         ; Check that RR is 0.
@@ -1042,7 +1042,7 @@ NOPF SR0
 ;
 ; 1/0 - 0 = 1/0 + ~0 = 1/0 + 1 = 1/0
 ;
-ONE  RR         ; Set CAR = 1, RR = 0.
+ONE  SR0        ; Set CAR = 1, RR = 0.
 ADD  RR
 SUB  SR7        ; Subtract 0.
 SKZ  RR         ; Check that RR is 0.
@@ -1054,7 +1054,7 @@ NOPF SR0
 ;
 ; 1/0 - 1 = 1/0 + ~1 = 1/0 + 0 = 0/1
 ;
-ONE  RR         ; Set CAR = 1, RR = 0.
+ONE  SR0        ; Set CAR = 1, RR = 0.
 ADD  RR
 SUB  SR6        ; Subtract 1.
 NAND RR         ; Check that RR is 1.
@@ -1066,7 +1066,7 @@ NOPF SR0
 ;
 ; 1/1 - 0 = 1/1 + ~0 = 1/1 + 1 = 1/1
 ;
-ONE  RR         ; Set CAR = 1, RR = 1.
+ONE  SR0        ; Set CAR = 1, RR = 1.
 ADD  RR
 LD   SR6
 SUB  SR7        ; Subtract 0.
@@ -1104,7 +1104,7 @@ STO  OR3
 STO  SR6        ; Set SR6 to 1.
 STOC SR7        ; Set SR7 to 0.
 ;
-ONE  RR         ; Set RR to 1.
+ONE  SR0        ; Set RR to 1.
 STO  SR0        ; Set SR0 to 1.
 ; Note the use of "SKZ SR7".  If the instruction is picking up "DATA"
 ; instead of "RR" as its input value, then this test will fail.
@@ -1114,7 +1114,7 @@ LD   SR0        ; Test fails if SR0 is still set to 1.
 SKZ  RR
 NOPF SR0
 ;
-ONE  RR         ; Set RR to 1.
+ONE  SR0        ; Set RR to 1.
 STO  SR1        ; Set SR1 to 1.
 NAND RR         ; Set RR to 0.
 ; Note the use of "SKZ SR6".  If the instruction is picking up "DATA"
@@ -1149,7 +1149,7 @@ STOC OR0
 STO  SR6        ; Set SR6 to 1.
 STOC SR7        ; Set SR7 to 0.
 ;
-ONE  RR         ; Set RR to 1.
+ONE  SR0        ; Set RR to 1.
 STOC SR2        ; Set SR2 to 0.
 RTN  RR         ; "RTN" is an unconditional skip, test with RR = 1.
 STO  SR2        ; Set SR2 to 1.
@@ -1157,7 +1157,7 @@ LD   SR2        ; Test fails if SR2 is set to 1.
 SKZ  RR
 NOPF SR0
 ;
-ONE  RR         ; Set RR to 1.
+ONE  SR0        ; Set RR to 1.
 STOC SR3        ; Set SR3 to 0.
 NAND RR
 RTN  RR         ; "RTN" is an unconditional skip, test with RR = 0.
@@ -1620,13 +1620,13 @@ STOC OR2
 STOC OR1
 STOC OR0
 ;
-ONE  RR         ; Test that loading RR = 1 into itself works.
+ONE  SR0        ; Test that loading RR = 1 into itself works.
 LD   RR
 NAND RR
 SKZ  RR
 NOPF SR0
 ;
-ONE  RR         ; Test that loading RR = 0 into itself works.
+ONE  SR0        ; Test that loading RR = 0 into itself works.
 NAND RR
 LD   RR
 SKZ  RR
