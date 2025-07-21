@@ -12,7 +12,7 @@ switches on the memory board:
 * 4 - MUL5X5 - Multiplies two 5-bit numbers to produce a 10-bit result.
 * 5 - DIV8x4 - Divides an 8-bit number by a 4-bit number to give an 8-bit quotient and a 4-bit remainder.
 * 6 - Unused, rings the bell and halts.
-* 7 - Unused, rings the bell and halts.
+* 7 - Rabbit example.
 
 The first two are by Usagi Electric.  The rest are by Rhys Weatherley.
 
