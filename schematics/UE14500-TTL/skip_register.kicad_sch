@@ -7,7 +7,7 @@
 	(title_block
 		(title "UE14500 TTL 1-bit Microprocessor")
 		(date "2025")
-		(rev "1")
+		(rev "2")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
 		(comment 3 "Skip Register")
 	)
@@ -1708,12 +1708,6 @@
 		)
 	)
 	(junction
-		(at 160.02 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c680afe9-d235-486f-8397-211ebe0db5ad")
-	)
-	(junction
 		(at 124.46 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1726,12 +1720,8 @@
 		(uuid "fdac7a0a-d54e-4450-b177-b5786e733a1d")
 	)
 	(no_connect
-		(at 177.8 107.95)
-		(uuid "53437a29-6f82-4969-8dfc-463088d153cf")
-	)
-	(no_connect
-		(at 177.8 113.03)
-		(uuid "eeb2de04-6c7f-40fb-8423-db77d413893a")
+		(at 177.8 77.47)
+		(uuid "26617519-7e89-4b4e-981e-55b6192fd131")
 	)
 	(wire
 		(pts
@@ -1775,6 +1765,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 72.39) (xy 195.58 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d9189ae-b274-4161-b802-8a89d1dc59c2")
+	)
+	(wire
+		(pts
 			(xy 156.21 74.93) (xy 162.56 74.93)
 		)
 		(stroke
@@ -1815,7 +1815,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 72.39) (xy 185.42 72.39)
+			(xy 210.82 72.39) (xy 218.44 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1835,7 +1835,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 121.92) (xy 170.18 118.11)
+			(xy 203.2 86.36) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1845,7 +1845,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 121.92) (xy 170.18 121.92)
+			(xy 198.12 86.36) (xy 203.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1915,16 +1915,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 110.49) (xy 160.02 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae67327c-246a-4a3f-8130-1f6080f084d7")
-	)
-	(wire
-		(pts
 			(xy 106.68 69.85) (xy 102.87 69.85)
 		)
 		(stroke
@@ -1945,16 +1935,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 107.95) (xy 162.56 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5c7408e-0e14-4635-97d5-f5744a884482")
-	)
-	(wire
-		(pts
 			(xy 80.01 66.04) (xy 80.01 60.96)
 		)
 		(stroke
@@ -1962,16 +1942,6 @@
 			(type default)
 		)
 		(uuid "cbbc99c0-b7a6-410b-beeb-8e33595aa2ed")
-	)
-	(wire
-		(pts
-			(xy 160.02 113.03) (xy 160.02 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2b07385-0085-454b-ad3c-f6f24fd2fe35")
 	)
 	(wire
 		(pts
@@ -1985,16 +1955,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 110.49) (xy 162.56 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9544bb0-28b4-41e7-bbfc-47a1b3577b4f")
-	)
-	(wire
-		(pts
 			(xy 74.93 60.96) (xy 80.01 60.96)
 		)
 		(stroke
@@ -2002,6 +1962,16 @@
 			(type default)
 		)
 		(uuid "f6e65e5a-9995-4f0a-a9fe-0f36ce15582a")
+	)
+	(wire
+		(pts
+			(xy 189.23 74.93) (xy 195.58 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb058985-3839-44d6-aad5-1a16e6aa5e31")
 	)
 	(wire
 		(pts
@@ -2015,7 +1985,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 77.47) (xy 185.42 77.47)
+			(xy 210.82 77.47) (xy 218.44 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2025,7 +1995,7 @@
 	)
 	(text "SKP - Skip Register"
 		(exclude_from_sim no)
-		(at 170.18 57.15 0)
+		(at 189.484 55.118 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2035,7 +2005,7 @@
 	)
 	(global_label "~{SKIP}"
 		(shape output)
-		(at 185.42 77.47 0)
+		(at 218.44 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2045,7 +2015,7 @@
 		)
 		(uuid "02e4e6c1-a04b-4689-a6f1-8068266e9e76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7595 77.47 0)
+			(at 225.7795 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,9 +2047,31 @@
 			)
 		)
 	)
+	(global_label "CLK1"
+		(shape input)
+		(at 189.23 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "42173ad5-9e0e-43d5-8794-44eee866b3df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 181.4672 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SKIP"
 		(shape output)
-		(at 185.42 72.39 0)
+		(at 218.44 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2089,7 +2081,7 @@
 		)
 		(uuid "433ed790-aea3-438a-90eb-c795ba1b60f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7595 72.39 0)
+			(at 225.7795 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2189,7 +2181,7 @@
 	)
 	(global_label "~{RESET}"
 		(shape input)
-		(at 165.1 121.92 180)
+		(at 198.12 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2199,7 +2191,7 @@
 		)
 		(uuid "fc7ec779-bce8-492a-9ce7-f6a2829154dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.3697 121.92 0)
+			(at 189.3897 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2347,7 +2339,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 170.18 102.87 0)
+		(at 203.2 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2356,7 +2348,7 @@
 		(fields_autoplaced yes)
 		(uuid "39747924-eb47-4b8f-882d-760efd367997")
 		(property "Reference" "#PWR91"
-			(at 170.18 106.68 0)
+			(at 203.2 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2365,7 +2357,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 170.18 97.79 0)
+			(at 203.2 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,7 +2365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 102.87 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +2374,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 102.87 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2383,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 102.87 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2689,7 +2681,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS74")
-		(at 170.18 110.49 0)
+		(at 203.2 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2698,7 +2690,7 @@
 		(fields_autoplaced yes)
 		(uuid "4dbba053-9625-4dad-9ef9-7833a68339d3")
 		(property "Reference" "U16"
-			(at 172.3741 100.33 0)
+			(at 205.3941 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2707,7 +2699,7 @@
 			)
 		)
 		(property "Value" "74LS74"
-			(at 172.3741 102.87 0)
+			(at 205.3941 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +2708,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 170.18 110.49 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2717,7 @@
 			)
 		)
 		(property "Datasheet" "74xx/74hc_hct74.pdf"
-			(at 170.18 110.49 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2734,7 +2726,7 @@
 			)
 		)
 		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at 170.18 110.49 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,72 +3125,6 @@
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4d3b60cb-7695-49c7-929a-ce7cab32c354"
 					(reference "U16")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a785fc0-7a5c-4ba0-8066-5ab138d17c4c")
-		(property "Reference" "#PWR89"
-			(at 160.02 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17a2368a-e23c-4244-b974-a8a0afa925bc")
-		)
-		(instances
-			(project "UE14500-TTL"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/4d3b60cb-7695-49c7-929a-ce7cab32c354"
-					(reference "#PWR89")
-					(unit 1)
 				)
 			)
 		)

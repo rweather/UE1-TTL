@@ -7,7 +7,7 @@
 	(title_block
 		(title "UE14500 TTL 1-bit Microprocessor")
 		(date "2025")
-		(rev "1")
+		(rev "2")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
 		(comment 3 "Instruction Register and Decoder")
 	)
