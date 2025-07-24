@@ -7,7 +7,7 @@
 	(title_block
 		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
-		(rev "2")
+		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
 		(comment 3 "Run/Stop Control")
 	)
@@ -3360,7 +3360,7 @@
 		)
 	)
 	(junction
-		(at 146.05 163.83)
+		(at 105.41 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1005e594-cad8-4dfa-8f12-675b7fd0997b")
@@ -3370,12 +3370,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f7e88ad-3ecd-4197-b610-7cad6344fe5d")
-	)
-	(junction
-		(at 241.3 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23f6df7c-ba22-415a-a1e0-222ed4b2d427")
 	)
 	(junction
 		(at 71.12 96.52)
@@ -3408,6 +3402,18 @@
 		(uuid "92fec44f-0625-4f47-a599-5edb4afd92cd")
 	)
 	(junction
+		(at 128.27 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b61d34d8-48d4-44d1-af99-c67820a13a3e")
+	)
+	(junction
+		(at 151.13 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcbd1d0c-8eb0-496f-8299-968617859863")
+	)
+	(junction
 		(at 205.74 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3420,20 +3426,20 @@
 		(uuid "cd1eb375-6e9c-401e-a10a-3353e05d7706")
 	)
 	(no_connect
-		(at 259.08 135.89)
-		(uuid "0d60c23a-e071-4e7e-a3ac-6f797d1c3885")
+		(at 144.78 170.18)
+		(uuid "4ab21332-8f2d-471e-a6b7-da1b39278401")
 	)
 	(no_connect
-		(at 259.08 140.97)
-		(uuid "4c5b19f7-53a6-446f-8bad-cce91e32323a")
-	)
-	(no_connect
-		(at 162.56 166.37)
+		(at 121.92 170.18)
 		(uuid "933c47e2-d1ab-44c4-bc9c-201c38018670")
+	)
+	(no_connect
+		(at 167.64 170.18)
+		(uuid "d804e52a-08c8-412b-b787-ad4329839c9d")
 	)
 	(wire
 		(pts
-			(xy 146.05 163.83) (xy 146.05 168.91)
+			(xy 105.41 167.64) (xy 105.41 172.72)
 		)
 		(stroke
 			(width 0)
@@ -3470,16 +3476,6 @@
 			(type default)
 		)
 		(uuid "07d5ef3a-91b4-48d5-a49c-3402d01c5b9c")
-	)
-	(wire
-		(pts
-			(xy 241.3 138.43) (xy 241.3 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e50e707-3d70-4b9a-831c-5e797abfe23a")
 	)
 	(wire
 		(pts
@@ -3563,6 +3559,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 167.64) (xy 129.54 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27808de4-1176-49be-9129-eafc15dce638")
+	)
+	(wire
+		(pts
 			(xy 87.63 58.42) (xy 93.98 58.42)
 		)
 		(stroke
@@ -3570,16 +3576,6 @@
 			(type default)
 		)
 		(uuid "2b5ec556-ea56-4d20-bc31-a00a5f1f1630")
-	)
-	(wire
-		(pts
-			(xy 241.3 135.89) (xy 243.84 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30332f32-8ee3-40df-aa2b-d5ad00e067c1")
 	)
 	(wire
 		(pts
@@ -3613,6 +3609,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 166.37) (xy 128.27 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a654054-2c4c-4ace-81a5-18730d707a2c")
+	)
+	(wire
+		(pts
 			(xy 223.52 74.93) (xy 223.52 82.55)
 		)
 		(stroke
@@ -3623,6 +3629,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 172.72) (xy 129.54 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4faffa1d-701a-492b-894b-bee68c3e599f")
+	)
+	(wire
+		(pts
 			(xy 147.32 93.98) (xy 147.32 96.52)
 		)
 		(stroke
@@ -3630,6 +3646,16 @@
 			(type default)
 		)
 		(uuid "50dba1dd-f780-4cd3-a589-0552ca6afc70")
+	)
+	(wire
+		(pts
+			(xy 151.13 166.37) (xy 151.13 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51d06eb7-d287-4c3a-943e-096496810b0b")
 	)
 	(wire
 		(pts
@@ -3650,16 +3676,6 @@
 			(type default)
 		)
 		(uuid "572e04cd-f3f1-49a9-b6fb-4c977f95ec41")
-	)
-	(wire
-		(pts
-			(xy 241.3 138.43) (xy 243.84 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a8f9c5c-0101-417c-9291-59cdfe4a274a")
 	)
 	(wire
 		(pts
@@ -3713,6 +3729,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 172.72) (xy 152.4 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695978be-c7af-4875-acf5-119d5bc069d5")
+	)
+	(wire
+		(pts
 			(xy 71.12 96.52) (xy 77.47 96.52)
 		)
 		(stroke
@@ -3763,7 +3789,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 162.56) (xy 146.05 163.83)
+			(xy 105.41 166.37) (xy 105.41 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3773,7 +3799,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 168.91) (xy 147.32 168.91)
+			(xy 105.41 172.72) (xy 106.68 172.72)
 		)
 		(stroke
 			(width 0)
@@ -3843,7 +3869,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 163.83) (xy 147.32 163.83)
+			(xy 105.41 167.64) (xy 106.68 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3880,6 +3906,16 @@
 			(type default)
 		)
 		(uuid "a9b98cb9-42be-4669-a9c3-ac419a23bb00")
+	)
+	(wire
+		(pts
+			(xy 151.13 167.64) (xy 151.13 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8cb1d23-3bed-456d-8223-c4bc9c99d79b")
 	)
 	(wire
 		(pts
@@ -3933,16 +3969,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 146.05) (xy 241.3 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df4a91eb-1083-4ca3-b869-b15893df00df")
-	)
-	(wire
-		(pts
 			(xy 93.98 58.42) (xy 115.57 58.42)
 		)
 		(stroke
@@ -3950,6 +3976,16 @@
 			(type default)
 		)
 		(uuid "dfb56cc2-9888-486d-a3fa-11cb1162a207")
+	)
+	(wire
+		(pts
+			(xy 128.27 167.64) (xy 128.27 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06510ed-f267-4de5-bf43-426a80fd6fa4")
 	)
 	(wire
 		(pts
@@ -4020,6 +4056,16 @@
 			(type default)
 		)
 		(uuid "fbd22fad-90ed-4ed2-8887-ec41e4011f92")
+	)
+	(wire
+		(pts
+			(xy 151.13 167.64) (xy 152.4 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfad103-1b92-4d4f-9678-5a16dd63aa7d")
 	)
 	(text "RC network for ~{RESET} is on the CPU board"
 		(exclude_from_sim no)
@@ -4356,72 +4402,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 41.91 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19017d4a-dd05-44bb-a35b-5338b92a89a3")
-		(property "Reference" "#PWR10"
-			(at 41.91 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1bc5dc86-2984-4f8b-bcb8-d1fab3cf9407")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 93.98 52.07 0)
 		(unit 1)
@@ -4554,6 +4534,72 @@
 			(project "UE1-TTL-Clock"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 128.27 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31e4920b-3072-4eca-95b1-e10467244c4e")
+		(property "Reference" "#PWR68"
+			(at 128.27 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 128.27 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 128.27 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02ab174b-c54a-4380-ad93-5796c628e114")
+		)
+		(instances
+			(project "UE1-TTL-Clock"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
+					(reference "#PWR68")
 					(unit 1)
 				)
 			)
@@ -4693,72 +4739,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39fd6513-aa41-4c88-a830-2d57a4ac057f")
-		(property "Reference" "#PWR14"
-			(at 59.69 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8b4c2001-8106-48ba-b782-0cdd195c0910")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 93.98 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4825,7 +4805,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 129.54 161.29 0)
+		(at 88.9 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4834,7 +4814,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e12b49c-c5f0-4083-8517-5eccae313c3b")
 		(property "Reference" "#PWR61"
-			(at 129.54 165.1 0)
+			(at 88.9 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4843,7 +4823,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 129.54 156.21 0)
+			(at 88.9 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4851,7 +4831,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 161.29 0)
+			(at 88.9 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4860,7 +4840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 161.29 0)
+			(at 88.9 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4869,7 +4849,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 129.54 161.29 0)
+			(at 88.9 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,73 +5147,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 41.91 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68b0d836-8ff5-40de-8030-fbe31a1c26e6")
-		(property "Reference" "#PWR9"
-			(at 41.91 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 41.91 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 41.91 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bbf0d8ff-01c9-4a15-86d8-7f4c84c050f5")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 76.2 152.4 0)
+		(at 35.56 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5242,7 +5156,7 @@
 		(fields_autoplaced yes)
 		(uuid "69bd9399-fc30-4c9d-b734-0da07c33f104")
 		(property "Reference" "#PWR53"
-			(at 76.2 156.21 0)
+			(at 35.56 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5251,7 +5165,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 76.2 147.32 0)
+			(at 35.56 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +5173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 152.4 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,7 +5182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 152.4 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5277,7 +5191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 76.2 152.4 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,78 +5278,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 59.69 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "760aa2b0-221c-4624-a3cd-210ef398255b")
-		(property "Reference" "C2"
-			(at 63.5 163.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 63.5 166.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 60.6552 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 59.69 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e780afa1-5e9a-4c85-ac65-8dcfb2b8c4da")
-		)
-		(pin "1"
-			(uuid "bc342a00-1f96-4401-9b9b-67457a01fe33")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 95.25 168.91 0)
+		(at 54.61 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5444,7 +5288,7 @@
 		(fields_autoplaced yes)
 		(uuid "79e70ef4-0e73-4010-a167-77cf285971ec")
 		(property "Reference" "#PWR56"
-			(at 95.25 175.26 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5453,7 +5297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 173.99 0)
+			(at 54.61 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5461,7 +5305,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 168.91 0)
+			(at 54.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5470,7 +5314,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 168.91 0)
+			(at 54.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5479,7 +5323,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 168.91 0)
+			(at 54.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5571,7 +5415,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 95.25 161.29 0)
+		(at 54.61 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5580,7 +5424,7 @@
 		(fields_autoplaced yes)
 		(uuid "818c5aa7-b186-4c75-8891-e6870b351858")
 		(property "Reference" "#PWR55"
-			(at 95.25 165.1 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,7 +5433,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 95.25 156.21 0)
+			(at 54.61 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5597,7 +5441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 161.29 0)
+			(at 54.61 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5606,7 +5450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 161.29 0)
+			(at 54.61 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5615,7 +5459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 95.25 161.29 0)
+			(at 54.61 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5636,180 +5480,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 59.69 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82393013-e26b-4363-9d38-b16d127b4940")
-		(property "Reference" "#PWR13"
-			(at 59.69 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 59.69 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 59.69 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "838b5b76-db7c-4f07-9b70-97aaf90040b1")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS74")
-		(at 251.46 138.43 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "861adb1c-0604-4cbb-adfe-42e66ce76b7b")
-		(property "Reference" "U1"
-			(at 253.6541 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS74"
-			(at 253.6541 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 251.46 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "74xx/74hc_hct74.pdf"
-			(at 251.46 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at 251.46 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "18777256-be8d-4141-9aa4-0efba2ce94db")
-		)
-		(pin "13"
-			(uuid "f0541982-c7eb-4657-ba3d-d350c036b13a")
-		)
-		(pin "9"
-			(uuid "5a71b211-f81a-4778-b5ac-eec71c56c142")
-		)
-		(pin "10"
-			(uuid "29fb4203-8be8-4097-94c5-8484a8405f1d")
-		)
-		(pin "6"
-			(uuid "1e788a87-8005-4904-a5e4-1f53ddbd3536")
-		)
-		(pin "2"
-			(uuid "98942955-df41-4045-a0e9-0ef29528df5d")
-		)
-		(pin "3"
-			(uuid "8cd7641f-f6bd-4477-ba22-c5d119d9bf2d")
-		)
-		(pin "7"
-			(uuid "d81a9745-9689-431a-8be5-06b1fb31d709")
-		)
-		(pin "1"
-			(uuid "b026ebdc-327e-4b1d-956a-f34478c7a16a")
-		)
-		(pin "4"
-			(uuid "0162108c-f320-44fb-b3f6-d9869ad2757f")
-		)
-		(pin "14"
-			(uuid "868bc26b-8122-44ee-b746-9e6b44fb324e")
-		)
-		(pin "5"
-			(uuid "c3555cf8-eadb-46db-870c-c98bf74b979b")
-		)
-		(pin "8"
-			(uuid "3386cbf2-6c4e-4793-8b11-d40334fc3308")
-		)
-		(pin "11"
-			(uuid "c02b4e9f-7f19-481e-90e3-a158bfefccff")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "U1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 129.54 168.91 0)
+		(at 88.9 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5818,7 +5490,7 @@
 		(fields_autoplaced yes)
 		(uuid "8cd96ed1-7806-4ad7-9426-e9b12331a8f4")
 		(property "Reference" "#PWR62"
-			(at 129.54 175.26 0)
+			(at 88.9 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5827,7 +5499,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 173.99 0)
+			(at 88.9 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +5507,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 168.91 0)
+			(at 88.9 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5844,7 +5516,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 168.91 0)
+			(at 88.9 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5853,7 +5525,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 168.91 0)
+			(at 88.9 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5945,7 +5617,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 129.54 165.1 0)
+		(at 88.9 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5954,7 +5626,7 @@
 		(fields_autoplaced yes)
 		(uuid "91f80edf-c41d-4528-a96d-a3230fd16214")
 		(property "Reference" "C8"
-			(at 133.35 163.8299 0)
+			(at 92.71 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5963,7 +5635,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 133.35 166.3699 0)
+			(at 92.71 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5972,7 +5644,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 130.5052 168.91 0)
+			(at 89.8652 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5981,7 +5653,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 165.1 0)
+			(at 88.9 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5990,7 +5662,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 129.54 165.1 0)
+			(at 88.9 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6083,7 +5755,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 111.76 152.4 0)
+		(at 71.12 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6092,7 +5764,7 @@
 		(fields_autoplaced yes)
 		(uuid "93acf85a-78e2-49d9-a172-9cee6afd172f")
 		(property "Reference" "#PWR59"
-			(at 111.76 156.21 0)
+			(at 71.12 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6101,7 +5773,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 111.76 147.32 0)
+			(at 71.12 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6109,7 +5781,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 152.4 0)
+			(at 71.12 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6118,7 +5790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 152.4 0)
+			(at 71.12 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +5799,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 111.76 152.4 0)
+			(at 71.12 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,112 +5885,6 @@
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "R26")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS74")
-		(at 41.91 165.1 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96d65200-3467-403c-bd53-1068c6e7667f")
-		(property "Reference" "U1"
-			(at 48.26 163.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS74"
-			(at 48.26 166.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 41.91 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "74xx/74hc_hct74.pdf"
-			(at 41.91 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at 41.91 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "1ea7db5b-b682-4ffb-b54a-3a1c8621f669")
-		)
-		(pin "13"
-			(uuid "16a74c2c-fbff-4a07-863f-698611b17787")
-		)
-		(pin "9"
-			(uuid "34983976-1087-4333-be50-5391313233bb")
-		)
-		(pin "10"
-			(uuid "ae568826-5d81-4a9b-b855-4442f22a2a2a")
-		)
-		(pin "6"
-			(uuid "1e788a87-8005-4904-a5e4-1f53ddbd3537")
-		)
-		(pin "2"
-			(uuid "98942955-df41-4045-a0e9-0ef29528df5e")
-		)
-		(pin "3"
-			(uuid "8cd7641f-f6bd-4477-ba22-c5d119d9bf2e")
-		)
-		(pin "7"
-			(uuid "5ce84e78-d0de-4817-9978-1edf7c87d725")
-		)
-		(pin "1"
-			(uuid "b026ebdc-327e-4b1d-956a-f34478c7a16b")
-		)
-		(pin "4"
-			(uuid "0162108c-f320-44fb-b3f6-d9869ad27580")
-		)
-		(pin "14"
-			(uuid "0d341871-7b85-4448-83cf-c821068b1ebe")
-		)
-		(pin "5"
-			(uuid "c3555cf8-eadb-46db-870c-c98bf74b979c")
-		)
-		(pin "8"
-			(uuid "fa4786b1-c0ea-442b-9e8d-25d1d9afcaba")
-		)
-		(pin "11"
-			(uuid "fed2f2f0-7853-445e-a80b-cba1c6a2dfab")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "U1")
-					(unit 3)
 				)
 			)
 		)
@@ -6561,7 +6127,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 177.8 0)
+		(at 71.12 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6570,7 +6136,7 @@
 		(fields_autoplaced yes)
 		(uuid "a83c170e-2044-4349-a7e5-5aa6636624e2")
 		(property "Reference" "#PWR60"
-			(at 111.76 184.15 0)
+			(at 71.12 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6579,7 +6145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 182.88 0)
+			(at 71.12 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6587,7 +6153,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 177.8 0)
+			(at 71.12 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6596,7 +6162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 177.8 0)
+			(at 71.12 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6605,7 +6171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 177.8 0)
+			(at 71.12 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6627,7 +6193,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 95.25 165.1 0)
+		(at 54.61 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6636,7 +6202,7 @@
 		(fields_autoplaced yes)
 		(uuid "acb9442f-5d7c-49d2-aec6-a5533b7a5656")
 		(property "Reference" "C7"
-			(at 99.06 163.8299 0)
+			(at 58.42 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6645,7 +6211,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 99.06 166.3699 0)
+			(at 58.42 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6654,7 +6220,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 96.2152 168.91 0)
+			(at 55.5752 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6663,7 +6229,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 165.1 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6672,7 +6238,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 95.25 165.1 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +6263,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 146.05 162.56 0)
+		(at 105.41 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6706,7 +6272,7 @@
 		(fields_autoplaced yes)
 		(uuid "acbbfe75-fe65-414a-baee-494e6de971c9")
 		(property "Reference" "#PWR65"
-			(at 146.05 166.37 0)
+			(at 105.41 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6715,7 +6281,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 146.05 157.48 0)
+			(at 105.41 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,7 +6289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 162.56 0)
+			(at 105.41 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6732,7 +6298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 162.56 0)
+			(at 105.41 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6741,7 +6307,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 146.05 162.56 0)
+			(at 105.41 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6756,72 +6322,6 @@
 			(project "UE1-TTL-Clock"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "#PWR65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.3 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b2efa7c8-9631-4ea7-879d-6c8dad57c4f6")
-		(property "Reference" "#PWR75"
-			(at 241.3 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 241.3 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bbf0187f-feab-4b22-a9fa-933aa5c38137")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR75")
 					(unit 1)
 				)
 			)
@@ -6899,7 +6399,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS132")
-		(at 76.2 165.1 0)
+		(at 35.56 168.91 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6908,7 +6408,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5818c8f-d06e-4eb0-8aca-1f70a64711c2")
 		(property "Reference" "U5"
-			(at 82.55 163.8299 0)
+			(at 41.91 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6917,7 +6417,7 @@
 			)
 		)
 		(property "Value" "74LS132"
-			(at 82.55 166.3699 0)
+			(at 41.91 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6926,7 +6426,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 76.2 165.1 0)
+			(at 35.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6935,7 +6435,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS132"
-			(at 76.2 165.1 0)
+			(at 35.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6944,7 +6444,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input NAND Schmitt trigger"
-			(at 76.2 165.1 0)
+			(at 35.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6999,6 +6499,72 @@
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "U5")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 151.13 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdb7c2f4-6d2f-4526-8e8b-5c181cff0d46")
+		(property "Reference" "#PWR69"
+			(at 151.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 151.13 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 151.13 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8d42374-84f8-4db6-8398-ef3d727f137e")
+		)
+		(instances
+			(project "UE1-TTL-Clock"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
+					(reference "#PWR69")
+					(unit 1)
 				)
 			)
 		)
@@ -7176,34 +6742,32 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 111.76 165.1 0)
-		(unit 5)
+		(at 137.16 170.18 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d4e2caa4-22a2-4344-a2d5-4be129fb440a")
+		(uuid "cbd29ebc-b732-4953-8d5d-7b769660fa5a")
 		(property "Reference" "U6"
-			(at 118.11 163.8299 0)
+			(at 137.16 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "74LS02"
-			(at 118.11 166.3699 0)
+			(at 137.16 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 111.76 165.1 0)
+			(at 137.16 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7212,7 +6776,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 111.76 165.1 0)
+			(at 137.16 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7221,7 +6785,113 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 111.76 165.1 0)
+			(at 137.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "dce9e9be-23a2-4a4d-ab74-817cf245511f")
+		)
+		(pin "7"
+			(uuid "85b0596f-e3c0-4647-9d57-36da23a3e4f4")
+		)
+		(pin "5"
+			(uuid "534de4f6-47da-42c4-ad8c-ccd6a4bf816c")
+		)
+		(pin "4"
+			(uuid "eeee612e-897a-4780-8d48-d2a28c714f0a")
+		)
+		(pin "2"
+			(uuid "babdb3b8-fba8-4ce8-9734-d2bb499dfb1f")
+		)
+		(pin "12"
+			(uuid "88644efb-821d-42c0-a436-6a9add156a70")
+		)
+		(pin "3"
+			(uuid "25a0121f-e309-4d0f-832a-d8683e54bf0b")
+		)
+		(pin "1"
+			(uuid "bac006a1-cc16-4ba7-9655-8466ca30cbe3")
+		)
+		(pin "8"
+			(uuid "631fa04d-f2f5-4b40-adec-7acbaa1b8a0d")
+		)
+		(pin "9"
+			(uuid "e262d9d5-a6a9-4679-85fe-c0459239cd7d")
+		)
+		(pin "13"
+			(uuid "5034e6a1-8aad-452f-973a-5c2e65b64a4e")
+		)
+		(pin "6"
+			(uuid "de512b10-224e-4934-a496-0573bb04cac9")
+		)
+		(pin "14"
+			(uuid "a01cdab3-2495-4ddb-8e0c-da36f2faec67")
+		)
+		(pin "11"
+			(uuid "d2c5e265-e331-486c-90aa-fc394357948c")
+		)
+		(instances
+			(project "UE1-TTL-Clock"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
+					(reference "U6")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS02")
+		(at 71.12 168.91 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4e2caa4-22a2-4344-a2d5-4be129fb440a")
+		(property "Reference" "U6"
+			(at 77.47 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LS02"
+			(at 77.47 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 71.12 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+			(at 71.12 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input NOR gate"
+			(at 71.12 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7276,72 +6946,6 @@
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "U6")
 					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 251.46 146.05 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7fc8558-7672-40bb-ac11-224476a59164")
-		(property "Reference" "#PWR74"
-			(at 251.46 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 251.46 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 251.46 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c2d6353-36da-43dc-aedb-b38340a7b1e7")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR74")
-					(unit 1)
 				)
 			)
 		)
@@ -7555,7 +7159,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 154.94 166.37 0)
+		(at 114.3 170.18 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7564,7 +7168,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2b3a0a4-63a8-4a77-96b7-555dba0c4adf")
 		(property "Reference" "U6"
-			(at 154.94 157.48 0)
+			(at 114.3 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7572,7 +7176,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 154.94 160.02 0)
+			(at 114.3 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +7184,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 154.94 166.37 0)
+			(at 114.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7589,7 +7193,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 154.94 166.37 0)
+			(at 114.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7598,7 +7202,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 154.94 166.37 0)
+			(at 114.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7658,8 +7262,112 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74LS02")
+		(at 160.02 170.18 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f11d9de7-d331-4ef5-8466-5a294e6980d9")
+		(property "Reference" "U6"
+			(at 160.02 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS02"
+			(at 160.02 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 160.02 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+			(at 160.02 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input NOR gate"
+			(at 160.02 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "a954b390-5eee-4444-9129-d92a2d0946bc")
+		)
+		(pin "7"
+			(uuid "85b0596f-e3c0-4647-9d57-36da23a3e4f5")
+		)
+		(pin "5"
+			(uuid "534de4f6-47da-42c4-ad8c-ccd6a4bf816d")
+		)
+		(pin "4"
+			(uuid "eeee612e-897a-4780-8d48-d2a28c714f0b")
+		)
+		(pin "2"
+			(uuid "babdb3b8-fba8-4ce8-9734-d2bb499dfb20")
+		)
+		(pin "12"
+			(uuid "def4abed-e108-4a91-8d02-7d04f4dedebb")
+		)
+		(pin "3"
+			(uuid "25a0121f-e309-4d0f-832a-d8683e54bf0c")
+		)
+		(pin "1"
+			(uuid "bac006a1-cc16-4ba7-9655-8466ca30cbe4")
+		)
+		(pin "8"
+			(uuid "805254e2-d830-4f91-b054-bce8f310541f")
+		)
+		(pin "9"
+			(uuid "6d58e7bb-15d7-4b6c-adb6-f90ca1aba256")
+		)
+		(pin "13"
+			(uuid "e473ce7b-4988-40e7-b70a-1d533391dc35")
+		)
+		(pin "6"
+			(uuid "de512b10-224e-4934-a496-0573bb04caca")
+		)
+		(pin "14"
+			(uuid "a01cdab3-2495-4ddb-8e0c-da36f2faec68")
+		)
+		(pin "11"
+			(uuid "ad72586f-a7df-46cf-84b5-4b26ffa582ff")
+		)
+		(instances
+			(project "UE1-TTL-Clock"
+				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
+					(reference "U6")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 76.2 177.8 0)
+		(at 35.56 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7668,7 +7376,7 @@
 		(fields_autoplaced yes)
 		(uuid "f43cc7ae-ea1e-4333-b62f-a6a4a5fd37a0")
 		(property "Reference" "#PWR54"
-			(at 76.2 184.15 0)
+			(at 35.56 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7677,7 +7385,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 182.88 0)
+			(at 35.56 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7685,7 +7393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 177.8 0)
+			(at 35.56 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7694,7 +7402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 177.8 0)
+			(at 35.56 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7703,7 +7411,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 177.8 0)
+			(at 35.56 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7920,72 +7628,6 @@
 			(project "UE1-TTL-Clock"
 				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
 					(reference "#PWR67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 251.46 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff043580-85de-4575-8d25-b4fc76d4102f")
-		(property "Reference" "#PWR73"
-			(at 251.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 251.46 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 251.46 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9abc702f-71e3-4e56-9f6f-da218c81c9a4")
-		)
-		(instances
-			(project "UE1-TTL-Clock"
-				(path "/3387ba40-0694-43b2-a156-d12ce9552f1f/f69a8d6d-7737-4072-8404-b680b808cc61"
-					(reference "#PWR73")
 					(unit 1)
 				)
 			)

@@ -7,7 +7,7 @@
 	(title_block
 		(title "UE1-TTL Clock and Front Panel")
 		(date "2025")
-		(rev "2")
+		(rev "1")
 		(comment 1 "Copyright (c) 2025 Rhys Weatherley")
 	)
 	(lib_symbols
