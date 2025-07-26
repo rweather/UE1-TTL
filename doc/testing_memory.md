@@ -59,8 +59,8 @@ between 5V and ground.  Then insert the IC's into the sockets:
 
 ## Testing
 
-Connect the clock, processor, and memory boards together with the
-processor board in the middle.
+Connect the clock, processor, and memory boards together.  The processor
+board goes in the middle.
 
 Burn a 32K x 8 EEPROM with the contents of the "UE1TEST.ROM" file in the
 "programs" directory of this repository.
@@ -86,3 +86,29 @@ If "UE1 DIAPER1" passes, then select program 3, press RESET and then RUN.
 This is the "UE1 DIAPER2" program which tests inputs and outputs.
 The values on input switches IR1 to IR7 are copied to OR1 to OR7 every
 loop iteration.  OR0 will be set to the even parity of the other 7 bits.
+
+If programs 0, 2, and 3 all work, then congratulations!  You have a
+working computer!
+
+## Version 1 mistakes
+
+There is a minor issue with the "rewind" instruction which isn't fatal.
+If the second instruction after a SKZ involves a memory address with
+bit 3 set, an extra skip might occur.  This is due to clock glitches in the
+generation of the rewind signal.
+
+For most code, this isn't an issue.  It is usually possible to modify the
+code to work around it.  Either by modifying the problematic instruction
+to use a different memory address, or by inserting extra "NOP0 SR0"
+instructions.  Here is an example:
+
+    SKZ RR
+    NOPF SR0
+    ONE RR      ; Problem happens here, use "ONE SR0" instead.
+
+If modifying the code is not possible, then pull U8 out of its socket
+and short pins 8 and 9 together.  This will disable the "rewind"
+instruction entirely.
+
+I haven't created a version 2 of the memory board yet, because the
+rewind issue is fairly minor.

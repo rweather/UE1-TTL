@@ -6,7 +6,15 @@ UE1 Computer in TTL
 This is an implementation of the [Usagi Electric UE1 vacuum tube computer architecture](https://github.com/Nakazoto/UEVTC/wiki)
 in TTL logic.  It runs the same code as the original.
 
-<a href="images/kicad-3d-full-computer.png"><img alt="UE1 TTL 3D Rendering" src="images/kicad-3d-full-computer.png" width="860"/></a>
+Here is the top and bottom of the version 1 prototype, just after running the
+Fibonacci example (click for a larger image):
+
+<a href="images/ue1-ttl-photo.jpg"><img alt="UE1 TTL" src="images/ue1-ttl-photo.jpg" width="860"/></a>
+
+<a href="images/ue1-ttl-bottom.jpg"><img alt="UE1 TTL" src="images/ue1-ttl-bottom.jpg" width="860"/></a>
+
+I made some mistakes in the version 1 prototype that needed bodging.
+The schematics and gerbers below have been updated to include the fixes.
 
 ## Specifications
 
@@ -43,18 +51,21 @@ The computer is split across three PCB's, because:
 * [Schematics](schematics/UE1-TTL-Clock/PDF/UE1-TTL-Clock.pdf)
 * [Gerbers](schematics/UE1-TTL-Clock/Gerber)
 * [Assembling and testing](doc/testing_clock.md)
+* [Version 1 mistakes](doc/testing_clock.md#version-1-mistakes)
 
 ### Processor board
 
 * [Schematics](schematics/UE14500-TTL/PDF/UE14500-TTL.pdf)
 * [Gerbers](schematics/UE14500-TTL/Gerber)
 * [Assembling and testing](doc/testing_processor.md)
+* [Version 1 mistakes](doc/testing_processor.md#version-1-mistakes)
 
 ### Memory and I/O board
 
 * [Schematics](schematics/UE1-TTL-Memory/PDF/UE1-TTL-Memory.pdf)
 * [Gerbers](schematics/UE1-TTL-Memory/Gerber)
 * [Assembling and testing](doc/testing_memory.md)
+* [Version 1 mistakes](doc/testing_memory.md#version-1-mistakes)
 
 ## Programming the computer
 
@@ -72,6 +83,9 @@ Pad shorter programs with NOP0 instructions or replicate the program
 multiple times to fill up the 4096 bytes of space.  There is a new
 "rewind" opcode that can be used to loop short programs without
 excessive NOP0's.  See the next section.
+
+The "programs" directory contains some sample programs, together with a
+Python script to pack up to 8 binaries into a single 32K EEPROM image.
 
 ## Instruction set
 
@@ -97,7 +111,8 @@ as follows:
 For example, if your LED is rated for 1.9V and 10mA, then RLED should be
 at least (5 - 1.9) / 0.01 = 310 ohms.  A 330 ohm resistor will do.
 I recommend using LED's with 2mA or less current rating to avoid putting
-too much strain on the TTL logic outputs.
+too much strain on the TTL logic outputs.  I used 2mA LED's and RLED =
+1800 ohms.
 
 The IC's are listed as 74LS series, but you can use 74HC series instead.
 Use the same series for all chips.
@@ -108,9 +123,9 @@ parts list for the whole computer.
 ### Clock and front panel board
 
 * 2 x 555 timer
+* 1 x 74HC4017 decade counter
 * 1 x 74LS74 dual D flip-flop
 * 1 x 74LS02 quad NOR gate
-* 1 x 74LS08 quad AND gate
 * 1 x 74LS132 quad NAND gate with Schmitt trigger
 * 2 x 10nF ceramic or monolithic capacitor
 * 4 x 100nF ceramic or monolithic capacitor
@@ -130,7 +145,8 @@ parts list for the whole computer.
 * 2 x 2.54mm jumper
 * 2 x 36-pin right-angle terminal header
 * 2 x 8-pin DIP socket
-* 4 x 14-pin DIP socket
+* 3 x 14-pin DIP socket
+* 1 x 16-pin DIP socket
 
 ### Processor board
 
@@ -185,9 +201,10 @@ chips can be used in place of 74LS.
 
 * 1 x AT28C256 32K x 8 EEPROM
 * 2 x 555 timer
+* 1 x 74HC4017 decade counter
 * 3 x 74LS00 quad NAND gate
 * 4 x 74LS02 quad NOR gate
-* 3 x 74LS08 quad AND gate
+* 2 x 74LS08 quad AND gate
 * 1 x 74LS32 quad OR gate
 * 4 x 74LS74 dual D flip-flop
 * 1 x 74LS86 quad XOR gate
@@ -222,8 +239,8 @@ chips can be used in place of 74LS.
 * 4 x 36-pin terminal header (for clock and memory boards)
 * 2 x 36-pin terminal socket (for CPU board)
 * 2 x 8-pin DIP socket
-* 19 x 14-pin DIP socket
-* 8 x 16-pin DIP socket
+* 18 x 14-pin DIP socket
+* 9 x 16-pin DIP socket
 * 1 x 20-pin DIP socket
 * 1 x 28-pin DIP socket (15.24mm pitch width)
 

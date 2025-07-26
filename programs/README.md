@@ -2,7 +2,7 @@
 This directory contains a 32K ROM image `UE1TEST.ROM` that can be used
 to test the functionality of the UE1-TTL computer.
 
-There ROM can hold up to eight programs, that are selected using DIP
+The ROM can hold up to eight programs, that are selected using DIP
 switches on the memory board:
 
 * 0 - UE1FIBO - Calculates the Fibonacci sequence up to 21.
@@ -18,3 +18,11 @@ The first two are by Usagi Electric.  The rest are by Rhys Weatherley.
 
 The Python script `ue1-ttl-pack.py` packs eight program images into a
 single 32K ROM image.  It can be used to create ROM images with new programs.
+
+The Rabbit example (program 7) is intended for use with an 8x8 dot matrix
+LED display module that uses the MAX7221 LED driver chip.  The 3594
+instructions of the program bit-bang out the SPI commands for displaying
+"HELLORLD" followed by a picture of a rabbit.  See the Python script
+"rabbit-gen.py" for more information on how to wire up the module.
+
+<a href="rabbit.jpg"><img alt="UE1 Rabbit" src="rabbit.jpg" width="860"/></a>

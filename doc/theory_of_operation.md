@@ -19,7 +19,7 @@ board, "C/Un" is used to refer to IC's on the clock board, and
 The processor requires a two-phase clock, delivered on the CLK1 and CLK2
 pins of the edge connector.  The waveforms look like this:
 
-<img alt="Clock Phases" src="clock_phases.png" width="500"/>
+<img alt="Clock Phases" src="clock_phases_v2.png" width="600"/>
 
 * Rising edge of CLK1 - Load the next instruction into the instruction register.
 * Falling edge of CLK1 - Perform the instruction; update registers and memory.
@@ -32,28 +32,38 @@ makes it closer to one clock cycle per instruction than my design.
 
 The clock board derives CLK1 and CLK2 from the MAIN\_CLK signal.
 C/U3 on the clock board is a 555 timer that provides the MAIN\_CLK
-between 0.7Hz and 480Hz.  This is divided by two by C/U1 and C/U2 to
-create CLK1 and CLK2:
+between 0.7Hz and 480Hz.  This is divided by four by C/U2 to create
+CLK1 and CLK2:
 
-<img alt="Clock Derivation" src="clock_derivation.png" width="860"/>
+<img alt="Clock Derivation" src="clock_derivation_v2.png" width="860"/>
 
-The /HALTED signal forces both clocks to zero when the machine halts.
-If /HALTED goes high again in the middle of a MAIN\_CLK pulse, then it may
-cause a phantom pulse on CLK2 before the next CLK1 pulse.
+The /RUNNING signal forces both clocks to zero when the machine halts
+by holding C/U2 in reset and disabling the clock input.  The clock
+resumes with CLK1 preceding CLK2 when /RUNNING goes high.
 
-Phantom CLK2 pulses may advance the program counter by an extra instruction
-after a NOPF/HLT instruction.  A NOP0 or two after a NOPF/HLT ensures
-that phantom CLK2 pulses will have no effect on the program when it resumes.
-This is no different than the original UE1 which requires some NOP0 padding
-after NOPF/HLT to allow the tape motor to slow down and stop.
+If /RUNNING goes high in the middle of a CLK1 pulse or before the rising
+edge of CLK2, then the current instruction will be only partially executed.
 
-If /HALTED goes low in the middle of a CLK1 pulse or before the rising
-edge of CLK2, then the current instruction will be completed but the SKIP
-register will not be updated and the program counter will not be incremented.
+The maximum CPU speed is 120 instructions per second.  If you want to run the
+computer faster than that, there are two options:
 
-The maximum CPU speed is 240 instructions per second.  If you want to run the
-computer faster than that, you can move the "Select Clock" jumper to the EXT
-position and inject your own MAIN\_CLK from off-board.
+* Change C4 in the clock circuit from 1uF to something smaller.  Changing it
+  to 100nF will give a 10x improvement in performance.
+* Move the "Select Clock" jumper to the EXT position and inject your
+  own MAIN\_CLK from off-board.
+
+My previous clock design in version 1 used a 74LS74 flip-flop and AND gates to
+generate CLK1 and CLK2 with a divide-by-two setup:
+
+<img alt="Clock Derivation Version 1" src="clock_derivation.png" width="860"/>
+
+This caused clock gitches all over the place, causing double increments on
+the program counter, false memory writes, and other problems.  The waveform
+looked something like this:
+
+<img alt="Glitching Clock Phases" src="clock_phases_glitch.png" width="500"/>
+
+Never gate your clock!  I know that now!
 
 ## Run/Stop Control
 
@@ -88,11 +98,11 @@ Press "Run" fast enough and it isn't an issue, for now.
 ## Single-Stepping
 
 The clock board does not have a method to single-step instructions,
-as I could not figure out how to generate a single pair of CLK1/CLK2
-pulses and then stop.
+as at the time I could not figure out how to generate a single pair of
+CLK1/CLK2 pulses and then stop.
 
 For debugging, you can hook up an external clock using a push button.
-The button needs to be pressed multiple times to execute a single
+The button needs to be pressed four times to execute a single
 instruction.  This is what the circuit looks like:
 
 <img alt="Single-Step" src="single_step_circuit.png" width="500"/>
@@ -150,6 +160,11 @@ would need to be laid out to put the jump labels at multiples of 512,
 but that isn't hard.  The current memory board doesn't do this,
 but replacement memory boards could.
 
+Note: There is a slight bug in my implementation of "rewind" that can
+cause instructions to be skipped when they shouldn't be.  It is easy
+to work around the problem with slight modifications to the code,
+or by disabling "rewind" entirely.  See [this page](testing_memory.md#version-1-mistakes) for more information.
+
 ## Registers
 
 RR, CAR, IEN, OEN, and SKIP are implemented in 74LS74 flip-flops.
@@ -181,7 +196,13 @@ rising edge of CLK2.  If /OP\_RTN is low, then SKIP is set to 1.
 If /OP\_SKZ is low and RR is low, then SKIP is set to 1.
 If neither case is true, then SKIP is set to 0.
 
-<img alt="Skip Register" src="skip_register.png" width="860"/>
+<img alt="Skip Register" src="skip_register_v2.png" width="860"/>
+
+The SKIP value is "double-buffered" by two flip-flops.  This ensures
+that the state of SKIP does not affect the instruction register until
+the next instruction is loaded on the rising edge of CLK1.  Without
+the double buffering, it is possible for skipped instructions to
+"un-skip" in the middle of instruction execution.
 
 ## Arithmetic and Logic Unit
 
@@ -200,11 +221,16 @@ value to store back to RR based on the current opcode:
 The bell circuit uses a 555 timer to generate a monostable pulse
 to drive a buzzer when the /OP\_IOC control line goes low.
 
-This circuit was partially a mistake.  I should have used a drive transistor
-on the output of the 555 to handle the 30mA or so of buzzer current.
+This circuit was partially a mistake.  I probably should have used a drive
+transistor on the output of the 555 to handle the 30mA or so of buzzer current.
 I managed to get away with it and the bell does work when running programs.
 
 <img alt="Bell Circuit" src="bell.png" width="860"/>
+
+I tried to wire the 555 timer up in monostable mode to generate a 110ms pulse
+on the falling edge of /OP\_IOC.  This didn't work!  The bell sounds when
+/OP\_IOC is low and doesn't stop until it goes high again.  In practice
+this isn't a problem at low instruction execution speeds so I left it alone.
 
 ## Tape
 
@@ -264,40 +290,9 @@ for the "rewind" instruction, as described earlier.
 
 ## Bugs
 
-### Processor board
+I made several mistakes in version 1 of the design.  They are documented
+on these pages:
 
-Version 1 of the processor board had a bug in the generation of the
-WRITE signal.  WRITE was originally gated off CLK1:
-
-<img alt="Write Signal Version 1" src="write_signal_1.png"/>
-
-This could cause invalid data to be written to memory when the next
-instruction was loaded on the following CLK1 rising edge.  Gate
-propagation would delay the end of the WRITE pulse into the next
-CLK1 pulse.  Moving it to CLK2 fixed the problem:
-
-<img alt="Write Signal Version 2" src="write_signal_2.png"/>
-
-The [testing page for the processor](testing_processor.md)
-describes how to bodge around this bug on the version 1 PCB.
-
-### Clock board
-
-The clock board has several issues:
-
-* I wasn't able to figure out a good design for generating a single pair of
-  CLK1/CLK2 pulses for single-stepping, so I left it out.
-* The clock is susceptible to phantom CLK1 and CLK2 pulses when the
-  machine halts or resumes.  A better design would ensure that the pulses
-  are always generated in pairs.
-* The buzzer circuit has issues.  I should have used a drive transistor
-  instead of connecting the buzzer directly to the output of the 555.
-  The buzzer also keeps sounding while /OP\_IOC is low; I meant to make it
-  act only on a low-going edge.
-* If the Run button is held down, the program will run until halt and then
-  start running again.  Run and Halt should only act on a low-going
-  edge, not on a low level.
-
-None of these prevent the computer from working, but they can be annoying.
-In my defence, this was my first ever TTL logic computer!  The next
-one will be better.
+* [Clock board mistakes](testing_clock.md#version-1-mistakes)
+* [Processor board mistakes](testing_processor.md#version-1-mistakes)
+* [Memory board mistakes](testing_memory.md#version-1-mistakes)

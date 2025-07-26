@@ -60,33 +60,6 @@ between 5V and ground.  Then insert the IC's into the sockets:
 * U15 - 74LS02
 * U16 - 74LS74
 
-## Bodge Wires
-
-If you are using version 1 of the processor board, there is a bug
-with the generation of the WRITE signal.  Version 1 gates WRITE
-with the CLK1 signal:
-
-<img alt="Write Signal Version 1" src="write_signal_1.png"/>
-
-This can cause invalid data to be written to memory when the next
-instruction was loaded on the following CLK1 rising edge.  Gate
-propagation would delay the end of the WRITE pulse into the next
-CLK1 pulse.  Moving it to CLK2 fixes the problem:
-
-<img alt="Write Signal Version 2" src="write_signal_2.png"/>
-
-This is fixed in the gerbers for version 2 of the processor board.
-If you have version 1, then disconnect pin 2 of U2 from CLK1,
-cutting where X is indicated, and then run a bodge wire to connect
-pin 2 to CLK2 instead:
-
-<img alt="Fixing Write Signal 1" src="fixing_write_signal_1.png" width="500"/>
-
-Cutting the tracks will disconnect pin 9 of U8 from CLK1, so it is
-also necessary to run a wire from pin 9 of U8 to CLK1 on the edge:
-
-<img alt="Fixing Write Signal 2" src="fixing_write_signal_2.png" width="300"/>
-
 ## Testing
 
 Make sure the power switch is in the right position and then power on the
@@ -107,3 +80,37 @@ turn on.  This should confirm that the processor is basically working.
 We will need memory to test anything else.
 
 <a href="processor_testing_1.jpg"><img src="processor_testing_1.jpg" width="860"/></a>
+
+Next: [Assembling and testing the memory board](testing_memory.md).
+
+## Version 1 mistakes
+
+I made a mistake in the generation of the WRITE signal.  I was gating it
+based on CLK1 to trigger memory writes on the falling edge of CLK1:
+
+<img alt="Write Signal Version 1" src="write_signal_1.png"/>
+
+However, this could cause invalid data to be written to memory when the next
+instruction was loaded on the following CLK1 rising edge.  Moving WRITE
+to CLK2 fixes the problem:
+
+<img alt="Write Signal Version 2" src="write_signal_2.png"/>
+
+This is fixed in the schematic and gerbers for version 2 of the processor board.
+
+As a consequence of moving the WRITE signal to the falling edge of CLK2,
+the SKZ instruction stopped working.  The SKIP state could reset
+mid-instruction, causing the current skipped instruction to "un-skip".
+
+This is the original skip circuit:
+
+<img alt="Skip Register Version 1" src="skip_register.png" width="800"/>
+
+And this is the updated version, which "double-buffers" the SKIP value:
+
+<img alt="Skip Register Version 2" src="skip_register_v2.png" width="860"/>
+
+The SKIP register is updated on the rising edge of CLK2 as before,
+but the value does not become active until the rising edge of CLK1
+during the next instruction.  This avoids an "un-skip" occurring in
+the middle of an instruction.
